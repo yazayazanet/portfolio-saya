@@ -5,7 +5,7 @@ function App() {
     <>
       <nav>
         <div className="wrap navbar">
-          <div className="brand">M. Bama Yaza</div>
+          <div className="brand">Bama Yaza</div>
           <ul>
             <li><a href="#about">Tentang</a></li>
             <li><a href="#experience">Pengalaman</a></li>
@@ -17,17 +17,36 @@ function App() {
       </nav>
 
       <header className="hero">
-        <div className="wrap hero-solo">
-          <div className="eyebrow">Teknik Mesin Industri — Rekayasa Konversi Energi</div>
-          <h1>Muhammad<br />Bama Yaza</h1>
-          <p className="role">
-            Lulusan D4 Teknik Mesin Industri ITS dengan pengalaman langsung di
-            produksi energi terbarukan (biodiesel), pemodelan sistem perpipaan,
-            konversi kendaraan hybrid, dan manajemen logistik proyek.
-          </p>
-          <div className="cta-row">
-            <a className="btn solid" href="#projects">Lihat proyek</a>
-            <a className="btn ghost" href="#contact">Hubungi saya</a>
+        <div className="dot-deco" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            {Array.from({ length: 8 }).map((_, row) =>
+              Array.from({ length: 8 }).map((_, col) => (
+                <circle key={`${row}-${col}`} cx={row * 26 + 10} cy={col * 26 + 10} r="1.6" fill="currentColor" />
+              ))
+            )}
+          </svg>
+        </div>
+
+        <div className="wrap hero-grid">
+          <div className="hero-text">
+            <div className="eyebrow">Teknik Mesin Industri — Rekayasa Konversi Energi</div>
+            <h1>Muhammad<br /><span>Bama Yaza</span></h1>
+            <p className="role">
+              Lulusan D4 Teknik Mesin Industri ITS dengan pengalaman langsung di
+              produksi energi terbarukan, pemodelan sistem perpipaan, konversi
+              kendaraan hybrid, dan manajemen logistik proyek.
+            </p>
+            <div className="cta-row">
+              <a className="btn solid" href="#projects">Lihat proyek</a>
+              <a className="btn ghost" href="#contact">Hubungi saya</a>
+            </div>
+          </div>
+
+          <div className="hero-photo">
+            <div className="photo-frame">
+              <span className="initials">MBY</span>
+            </div>
+            <div className="photo-tag">Surabaya, Indonesia</div>
           </div>
         </div>
       </header>
@@ -35,17 +54,17 @@ function App() {
       <section id="about">
         <div className="wrap about-grid">
           <div className="stat-list">
-            <div className="stat"><div className="num">3.41 / 4.00</div><div className="label">IPK — D4 Teknik Mesin Industri, ITS</div></div>
-            <div className="stat"><div className="num">Surabaya</div><div className="label">Domisili — siap penempatan luar kota</div></div>
-            <div className="stat"><div className="num">2026</div><div className="label">Lulus — konsentrasi Rekayasa Konversi Energi</div></div>
+            <div className="stat"><div className="num">3.41</div><div className="label">IPK dari 4.00 — D4 Teknik Mesin Industri</div></div>
+            <div className="stat"><div className="num">2026</div><div className="label">Lulus, konsentrasi Rekayasa Konversi Energi</div></div>
+            <div className="stat"><div className="num">02</div><div className="label">Pengalaman kerja industri</div></div>
           </div>
           <div className="about-text">
-            <h2 style={{ fontSize: '1.5rem', marginBottom: '14px' }}>Ringkasan</h2>
+            <h2>Ringkasan</h2>
             <p>
               Lulusan D4 Teknik Mesin Industri dengan konsentrasi Rekayasa Konversi
               Energi dan analisis sistem mekanikal. Punya pengalaman langsung di
-              produksi energi terbarukan (biodiesel), pemodelan sistem perpipaan,
-              konversi kendaraan hybrid, dan manajemen logistik proyek.
+              produksi energi terbarukan, pemodelan sistem perpipaan, konversi
+              kendaraan hybrid, dan manajemen logistik proyek.
             </p>
             <p>
               Terbiasa memakai software simulasi teknik tingkat lanjut, dengan
@@ -87,7 +106,7 @@ function App() {
 
       <section id="experience" className="alt-bg">
         <div className="wrap">
-          <h2 style={{ fontSize: '1.7rem', marginBottom: '36px' }}>Pengalaman kerja</h2>
+          <h2 className="section-title">Pengalaman kerja</h2>
           <div className="timeline">
             <div className="t-item">
               <div className="when">Feb 2025 — Jun 2025</div>
@@ -114,7 +133,7 @@ function App() {
 
       <section id="projects">
         <div className="wrap">
-          <h2 style={{ fontSize: '1.7rem', marginBottom: '36px' }}>Proyek &amp; riset akademik</h2>
+          <h2 className="section-title">Proyek &amp; riset akademik</h2>
 
           <div className="focus-card">
             <div>
@@ -130,22 +149,22 @@ function App() {
             <svg viewBox="0 0 300 180">
               <defs>
                 <marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                  <path d="M2 1L8 5L2 9" fill="#23262B" />
+                  <path d="M2 1L8 5L2 9" fill="#F5F1E8" />
                 </marker>
               </defs>
-              <rect x="30" y="30" width="60" height="50" rx="4" fill="#7B95A8" />
-              <text x="60" y="59" textAnchor="middle" fontSize="10" fill="#23262B">Minyak jelantah</text>
-              <path d="M92,55 L128,55" stroke="#23262B" strokeWidth="1.5" fill="none" markerEnd="url(#a1)" />
-              <rect x="130" y="30" width="70" height="50" rx="4" fill="#A6613D" />
-              <text x="165" y="55" textAnchor="middle" fontSize="9.5" fill="#F7F4EE">Transesteri-</text>
-              <text x="165" y="68" textAnchor="middle" fontSize="9.5" fill="#F7F4EE">fikasi</text>
-              <path d="M202,55 L238,55" stroke="#23262B" strokeWidth="1.5" fill="none" markerEnd="url(#a1)" />
-              <rect x="240" y="30" width="45" height="50" rx="4" fill="#3E5C76" />
-              <text x="262" y="59" textAnchor="middle" fontSize="10" fill="#F7F4EE">B40/70/100</text>
-              <line x1="40" y1="120" x2="260" y2="120" stroke="#C9C2B4" strokeWidth="1" />
-              <line x1="40" y1="120" x2="40" y2="90" stroke="#C9C2B4" strokeWidth="1" />
-              <path d="M50,115 C110,110 170,95 250,95" stroke="#3E5C76" strokeWidth="2" fill="none" />
-              <text x="120" y="150" fontSize="10" fill="#565349">Efisiensi termal vs rasio campuran biodiesel</text>
+              <rect x="30" y="30" width="60" height="50" rx="4" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="60" y="59" textAnchor="middle" fontSize="9.5" fill="#B3ADA0">Minyak jelantah</text>
+              <path d="M92,55 L128,55" stroke="#F5F1E8" strokeWidth="1.5" fill="none" markerEnd="url(#a1)" />
+              <rect x="130" y="30" width="70" height="50" rx="4" fill="#C9A227" />
+              <text x="165" y="55" textAnchor="middle" fontSize="9.5" fill="#121212">Transesteri-</text>
+              <text x="165" y="68" textAnchor="middle" fontSize="9.5" fill="#121212">fikasi</text>
+              <path d="M202,55 L238,55" stroke="#F5F1E8" strokeWidth="1.5" fill="none" markerEnd="url(#a1)" />
+              <rect x="240" y="30" width="45" height="50" rx="4" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="262" y="59" textAnchor="middle" fontSize="10" fill="#F5F1E8">B40/70/100</text>
+              <line x1="40" y1="120" x2="260" y2="120" stroke="#3A3A3A" strokeWidth="1" />
+              <line x1="40" y1="120" x2="40" y2="90" stroke="#3A3A3A" strokeWidth="1" />
+              <path d="M50,115 C110,110 170,95 250,95" stroke="#C9A227" strokeWidth="2" fill="none" />
+              <text x="105" y="150" fontSize="9.5" fill="#B3ADA0">Efisiensi termal vs rasio campuran biodiesel</text>
             </svg>
           </div>
 
@@ -153,20 +172,20 @@ function App() {
             <svg viewBox="0 0 300 180">
               <defs>
                 <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                  <path d="M2 1L8 5L2 9" fill="#23262B" />
+                  <path d="M2 1L8 5L2 9" fill="#F5F1E8" />
                 </marker>
               </defs>
-              <rect x="20" y="90" width="120" height="50" rx="6" fill="#7B95A8" />
-              <text x="80" y="119" textAnchor="middle" fontSize="10" fill="#23262B">Mesin diesel Panther</text>
-              <path d="M142,115 L178,115" stroke="#23262B" strokeWidth="1.5" fill="none" markerEnd="url(#a2)" />
-              <rect x="180" y="60" width="55" height="45" rx="6" fill="#A6613D" />
-              <text x="207" y="86" textAnchor="middle" fontSize="9" fill="#F7F4EE">Motor listrik</text>
-              <rect x="180" y="115" width="55" height="45" rx="6" fill="#3E5C76" />
-              <text x="207" y="141" textAnchor="middle" fontSize="9" fill="#F7F4EE">Inverter</text>
-              <rect x="245" y="90" width="45" height="45" rx="6" fill="#565349" />
-              <text x="267" y="116" textAnchor="middle" fontSize="9" fill="#F7F4EE">Baterai</text>
-              <line x1="237" y1="82" x2="243" y2="98" stroke="#23262B" strokeWidth="1.2" />
-              <line x1="237" y1="148" x2="243" y2="126" stroke="#23262B" strokeWidth="1.2" />
+              <rect x="20" y="90" width="120" height="50" rx="6" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="80" y="119" textAnchor="middle" fontSize="9.5" fill="#B3ADA0">Mesin diesel Panther</text>
+              <path d="M142,115 L178,115" stroke="#F5F1E8" strokeWidth="1.5" fill="none" markerEnd="url(#a2)" />
+              <rect x="180" y="60" width="55" height="45" rx="6" fill="#C9A227" />
+              <text x="207" y="86" textAnchor="middle" fontSize="9" fill="#121212">Motor listrik</text>
+              <rect x="180" y="115" width="55" height="45" rx="6" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="207" y="141" textAnchor="middle" fontSize="9" fill="#F5F1E8">Inverter</text>
+              <rect x="245" y="90" width="45" height="45" rx="6" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="267" y="116" textAnchor="middle" fontSize="9" fill="#F5F1E8">Baterai</text>
+              <line x1="237" y1="82" x2="243" y2="98" stroke="#F5F1E8" strokeWidth="1.2" />
+              <line x1="237" y1="148" x2="243" y2="126" stroke="#F5F1E8" strokeWidth="1.2" />
             </svg>
             <div>
               <span className="badge badge-course">Tugas Mata Kuliah</span>
@@ -192,20 +211,20 @@ function App() {
               </p>
             </div>
             <svg viewBox="0 0 300 180">
-              <circle cx="50" cy="90" r="26" fill="#7B95A8" />
-              <text x="50" y="94" textAnchor="middle" fontSize="9" fill="#23262B">Reservoir</text>
-              <line x1="76" y1="90" x2="130" y2="90" stroke="#3E5C76" strokeWidth="3" />
-              <rect x="130" y="78" width="26" height="24" rx="4" fill="#A6613D" />
-              <text x="143" y="118" textAnchor="middle" fontSize="9" fill="#565349">Pompa</text>
-              <line x1="156" y1="90" x2="200" y2="90" stroke="#3E5C76" strokeWidth="3" />
-              <line x1="200" y1="90" x2="200" y2="50" stroke="#3E5C76" strokeWidth="2.5" />
-              <line x1="200" y1="90" x2="200" y2="130" stroke="#3E5C76" strokeWidth="2.5" />
-              <line x1="200" y1="50" x2="250" y2="50" stroke="#3E5C76" strokeWidth="2" />
-              <line x1="200" y1="130" x2="250" y2="130" stroke="#3E5C76" strokeWidth="2" />
-              <circle cx="250" cy="50" r="5" fill="#565349" />
-              <circle cx="250" cy="130" r="5" fill="#565349" />
-              <text x="230" y="42" fontSize="8.5" fill="#565349">Gedung A</text>
-              <text x="230" y="146" fontSize="8.5" fill="#565349">Gedung B</text>
+              <circle cx="50" cy="90" r="26" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="50" y="94" textAnchor="middle" fontSize="9" fill="#B3ADA0">Reservoir</text>
+              <line x1="76" y1="90" x2="130" y2="90" stroke="#F5F1E8" strokeWidth="2.5" />
+              <rect x="130" y="78" width="26" height="24" rx="4" fill="#C9A227" />
+              <text x="143" y="118" textAnchor="middle" fontSize="9" fill="#B3ADA0">Pompa</text>
+              <line x1="156" y1="90" x2="200" y2="90" stroke="#F5F1E8" strokeWidth="2.5" />
+              <line x1="200" y1="90" x2="200" y2="50" stroke="#F5F1E8" strokeWidth="2" />
+              <line x1="200" y1="90" x2="200" y2="130" stroke="#F5F1E8" strokeWidth="2" />
+              <line x1="200" y1="50" x2="250" y2="50" stroke="#F5F1E8" strokeWidth="1.5" />
+              <line x1="200" y1="130" x2="250" y2="130" stroke="#F5F1E8" strokeWidth="1.5" />
+              <circle cx="250" cy="50" r="5" fill="#2A2A2A" stroke="#3A3A3A" />
+              <circle cx="250" cy="130" r="5" fill="#2A2A2A" stroke="#3A3A3A" />
+              <text x="228" y="42" fontSize="8.5" fill="#B3ADA0">Gedung A</text>
+              <text x="228" y="146" fontSize="8.5" fill="#B3ADA0">Gedung B</text>
             </svg>
           </div>
         </div>
@@ -214,7 +233,7 @@ function App() {
       <section id="education" className="alt-bg">
         <div className="wrap two-col">
           <div>
-            <h2 style={{ fontSize: '1.5rem', marginBottom: '22px' }}>Pendidikan</h2>
+            <h2 className="section-title small">Pendidikan</h2>
             <div className="timeline">
               <div className="t-item">
                 <div className="when">Lulus 2026</div>
@@ -222,7 +241,7 @@ function App() {
                 <div className="where">Institut Teknologi Sepuluh Nopember (ITS) — Konsentrasi Rekayasa Konversi Energi, IPK 3.41/4.00</div>
               </div>
             </div>
-            <h2 style={{ fontSize: '1.3rem', margin: '34px 0 14px' }}>Pelatihan</h2>
+            <h2 className="section-title small" style={{ marginTop: '34px' }}>Pelatihan</h2>
             <div className="tag-row" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '8px' }}>
               <span className="tag">Digital Marketing — Revou</span>
               <span className="tag">Rahasia Konten Kreatif Anti Ribet dengan ChatGPT — Teknotama</span>
@@ -230,7 +249,7 @@ function App() {
             </div>
           </div>
           <div>
-            <h2 style={{ fontSize: '1.5rem', marginBottom: '22px' }}>Pengalaman kepanitiaan</h2>
+            <h2 className="section-title small">Pengalaman kepanitiaan</h2>
             <div className="mini-card">
               <div className="when">2024</div>
               <h3>Expert Staff, Divisi Lisensi &amp; Keamanan</h3>
