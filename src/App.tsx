@@ -1,5 +1,4 @@
-import fotoProfil from './assets/pass2.jpg'
-import './App.css'
+import fotoProfil from './assets/foto-profil.jpg'
 import './App.css'
 
 function App() {
