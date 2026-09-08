@@ -1,3 +1,5 @@
+import fotoProfil from './assets/pass2.jpg'
+import './App.css'
 import './App.css'
 
 function App() {
@@ -44,9 +46,9 @@ function App() {
 
           <div className="hero-photo">
             <div className="photo-frame">
-              <span className="initials">MBY</span>
-            </div>
-            <div className="photo-tag">Surabaya, Indonesia</div>
+  <img src={fotoProfil} alt="Muhammad Bama Yaza" />
+</div>
+            <div className="photo-tag">Muhammad Bama Yaza</div>
           </div>
         </div>
       </header>
