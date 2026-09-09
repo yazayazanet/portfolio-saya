@@ -53,7 +53,15 @@ nav a:hover{color:var(--accent);}
 .photo-tag{font-size:0.8rem; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase;}
 
 .about-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px;}
-.stat-list{display:flex; flex-direction:column; gap:32px;}
+.stat-list{display:flex; flex-direction:column; gap:32px; align-self:start; position:sticky; top:100px;}
+
+.quick-contact{
+  margin-top:12px; padding-top:24px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:9px;
+}
+.quick-contact-heading{font-size:0.72rem; color:var(--ink-soft); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:2px;}
+.quick-contact a{font-size:0.85rem; color:var(--ink-soft); text-decoration:none; transition:color 0.2s ease;}
+.quick-contact a:hover{color:var(--accent);}
 .stat .num{font-family:'Fraunces', serif; font-size:2.6rem; font-weight:600; color:var(--accent); line-height:1;}
 .stat .label{font-size:0.88rem; color:var(--ink-soft); margin-top:8px; max-width:22ch;}
 .about-text h2{font-size:1.7rem; margin-bottom:18px;}
@@ -137,4 +145,5 @@ footer{padding:36px 0; text-align:center; color:var(--ink-soft); font-size:0.82r
   .hero-photo{max-width:220px; margin:0 auto;}
   nav ul{gap:16px;}
   .dot-deco{display:none;}
+  .stat-list{position:static; align-self:auto;}
 }

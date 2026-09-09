@@ -73,6 +73,13 @@ function App() {
             <div className="stat"><div className="num">3.41</div><div className="label">IPK dari 4.00 — D4 Teknik Mesin Industri</div></div>
             <div className="stat"><div className="num">2026</div><div className="label">Lulus, konsentrasi Rekayasa Konversi Energi</div></div>
             <div className="stat"><div className="num">02</div><div className="label">Pengalaman kerja industri</div></div>
+
+            <div className="quick-contact">
+              <span className="quick-contact-heading">Kontak cepat</span>
+              <a href="mailto:bamayaza@gmail.com">bamayaza@gmail.com</a>
+              <a href="tel:+6282110681473">082110681473 (WA)</a>
+              <a href="https://linkedin.com/in/bamayaza" target="_blank" rel="noreferrer">linkedin.com/in/bamayaza</a>
+            </div>
           </div>
           <div className="about-text">
             <h2>Ringkasan</h2>
