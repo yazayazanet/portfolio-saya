@@ -8,6 +8,12 @@ import epanetGoogleEarth from './assets/epanet-google-earth.jpg'
 import epanetIsometrik from './assets/epanet-isometrik-pipa.jpg'
 import magangBukitAsam from './assets/magang-bukit-asam.jpg'
 import smelterManyar from './assets/smelter-manyar.jpg'
+import softwareAnsysFluent from './assets/software-ansys-fluent.png'
+import softwareAnsysFluent2 from './assets/software-ansys-fluent-2.png'
+import softwareCaepipe from './assets/software-caepipe.png'
+import softwareInventorCrane from './assets/software-inventor-crane.jpg'
+import softwareInventorDrumlifter from './assets/software-inventor-drumlifter.jpg'
+import softwareInventorPipecutter from './assets/software-inventor-pipecutter.jpg'
 import './App.css'
 
 function App() {
@@ -110,6 +116,31 @@ function App() {
                 <span className="tag">Analisis data uji</span>
               </div>
             </div>
+
+            <div className="attachment-block">
+              <span className="attachment-heading">Lampiran</span>
+              <div className="attachment-group">
+                <span className="attachment-label">Autodesk Inventor</span>
+                <div className="attachment-row">
+                  <img src={softwareInventorCrane} alt="Render crane Autodesk Inventor" />
+                  <img src={softwareInventorDrumlifter} alt="Render drum lifter Autodesk Inventor" />
+                  <img src={softwareInventorPipecutter} alt="Render mesin potong pipa pneumatic Autodesk Inventor" />
+                </div>
+              </div>
+              <div className="attachment-group">
+                <span className="attachment-label">ANSYS Fluent</span>
+                <div className="attachment-row">
+                  <img src={softwareAnsysFluent} alt="Simulasi CFD ANSYS Fluent" />
+                  <img src={softwareAnsysFluent2} alt="Simulasi CFD ANSYS Fluent (ETS)" />
+                </div>
+              </div>
+              <div className="attachment-group">
+                <span className="attachment-label">CAEPIPE</span>
+                <div className="attachment-row">
+                  <img src={softwareCaepipe} alt="Analisis tegangan pipa CAEPIPE" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +164,7 @@ function App() {
             </div>
             <div className="t-item">
               <div className="when">Jul 2023 — Aug 2023</div>
-              <h3>Contract Logistics Staff PT Persada Engineering & Contracting</h3>
+              <h3>Logistics Staff</h3>
               <div className="where">Proyek Smelter 150 kV Manyar — Gresik, Jawa Timur</div>
               <ul>
                 <li>Mengelola alur barang &amp; material proyek untuk ketersediaan kebutuhan teknis di lapangan.</li>
@@ -251,7 +282,8 @@ function App() {
                 Berkontribusi mengonversi kendaraan diesel Panther 1994 menjadi sistem
                 paralel hybrid — mesin diesel dan motor listrik sama-sama terhubung ke
                 transmisi sehingga bisa menggerakkan roda sendiri-sendiri atau bersamaan.
-
+                Menghitung spesifikasi baterai, motor listrik, dan inverter, serta merancang
+                diagram pengkabelan dan sinkronisasi daya.
               </p>
             </div>
           </div>

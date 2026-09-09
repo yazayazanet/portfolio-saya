@@ -65,6 +65,21 @@ nav a:hover{color:var(--accent);}
 .tag-row{display:flex; gap:10px; flex-wrap:wrap;}
 .tag{font-size:0.8rem; padding:7px 14px; border:1px solid var(--line); border-radius:999px; color:var(--ink-soft); background:var(--panel);}
 
+.attachment-block{margin-top:32px; padding-top:24px; border-top:1px dashed var(--line);}
+.attachment-heading{font-size:0.78rem; color:var(--ink-soft); letter-spacing:0.08em; text-transform:uppercase; display:block; margin-bottom:18px;}
+.attachment-group{margin-bottom:22px;}
+.attachment-group:last-child{margin-bottom:0;}
+.attachment-label{font-size:0.85rem; color:var(--accent); font-weight:600; letter-spacing:0.02em; display:block; margin-bottom:10px;}
+.attachment-row{display:flex; flex-wrap:wrap; gap:14px;}
+.attachment-row img{
+  width:180px; height:150px; object-fit:contain; object-position:center;
+  border-radius:6px; border:1px solid var(--line); background:#0A0A0A; display:block;
+}
+
+@media (max-width: 640px){
+  .attachment-row img{width:calc(50% - 7px); height:130px;}
+}
+
 .timeline{position:relative; padding-left:32px; border-left:1px solid var(--line);}
 .t-item{position:relative; padding-bottom:40px;}
 .t-item:last-child{padding-bottom:0;}
