@@ -133,7 +133,7 @@ function App() {
             </div>
             <div className="t-item">
               <div className="when">Jul 2023 — Aug 2023</div>
-              <h3>Logistics Staff</h3>
+              <h3>Contract Logistics Staff PT Persada Engineering & Contracting</h3>
               <div className="where">Proyek Smelter 150 kV Manyar — Gresik, Jawa Timur</div>
               <ul>
                 <li>Mengelola alur barang &amp; material proyek untuk ketersediaan kebutuhan teknis di lapangan.</li>
