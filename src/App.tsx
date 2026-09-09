@@ -1,4 +1,13 @@
 import fotoProfil from './assets/foto-profil.jpg'
+import biodieselDyno from './assets/biodiesel-dyno-test.jpg'
+import biodieselUjiBbm from './assets/biodiesel-uji-bbm.jpg'
+import biodieselPencampuran from './assets/biodiesel-pencampuran.jpg'
+import biodieselPemurnian from './assets/biodiesel-pemurnian.jpg'
+import epanetNetworkMap from './assets/epanet-network-map.png'
+import epanetGoogleEarth from './assets/epanet-google-earth.jpg'
+import epanetIsometrik from './assets/epanet-isometrik-pipa.jpg'
+import magangBukitAsam from './assets/magang-bukit-asam.jpg'
+import smelterManyar from './assets/smelter-manyar.jpg'
 import './App.css'
 
 function App() {
@@ -118,6 +127,9 @@ function App() {
                 <li>Analisis heat exchanger untuk pendinginan oli gearbox, perawatan &amp; perbaikan berbagai jenis gearbox conveyor.</li>
                 <li>Merancang drum lifter untuk efisiensi pengisian oli gearbox, dan prototipe mobile crane untuk mesin bubut.</li>
               </ul>
+              <div className="exp-photo">
+                <img src={magangBukitAsam} alt="Bersama tim di bengkel reparasi PT Bukit Asam" />
+              </div>
             </div>
             <div className="t-item">
               <div className="when">Jul 2023 — Aug 2023</div>
@@ -127,6 +139,9 @@ function App() {
                 <li>Mengelola alur barang &amp; material proyek untuk ketersediaan kebutuhan teknis di lapangan.</li>
                 <li>Koordinasi dengan divisi operasional untuk mendukung efisiensi rantai pasok selama fase konstruksi kabel bawah tanah.</li>
               </ul>
+              <div className="exp-photo">
+                <img src={smelterManyar} alt="Bersama rekan kerja di lokasi Proyek Smelter Manyar" />
+              </div>
             </div>
           </div>
         </div>
@@ -146,56 +161,98 @@ function App() {
                 lalu menguji variasi campuran (B40, B70, B100) dibanding Pertamina Dex —
                 menganalisis efisiensi termal, performa mesin diesel, dan tingkat emisi gas buang.
               </p>
+              <div className="project-gallery">
+                <img src={biodieselPemurnian} alt="Proses pemurnian biodiesel menggunakan aquades" />
+                <img src={biodieselPencampuran} alt="Pencampuran Pertamina Dex dan B100" />
+                <img src={biodieselUjiBbm} alt="Uji konsumsi BBM pada mesin diesel" />
+                <img src={biodieselDyno} alt="Dyno test kendaraan uji tugas akhir" />
+              </div>
             </div>
-            <svg viewBox="0 0 300 180">
+            <svg viewBox="0 0 300 150">
               <defs>
                 <marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
                   <path d="M2 1L8 5L2 9" fill="#F5F1E8" />
                 </marker>
+                <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#E3C158" />
+                  <stop offset="100%" stopColor="#B3891C" />
+                </linearGradient>
+                <filter id="shadow1" x="-30%" y="-30%" width="160%" height="160%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2.5" floodColor="#000" floodOpacity="0.45" />
+                </filter>
               </defs>
-              <rect x="30" y="30" width="60" height="50" rx="4" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="60" y="59" textAnchor="middle" fontSize="9.5" fill="#B3ADA0">Minyak jelantah</text>
-              <path d="M92,55 L128,55" stroke="#F5F1E8" strokeWidth="1.5" fill="none" markerEnd="url(#a1)" />
-              <rect x="130" y="30" width="70" height="50" rx="4" fill="#C9A227" />
-              <text x="165" y="55" textAnchor="middle" fontSize="9.5" fill="#121212">Transesteri-</text>
-              <text x="165" y="68" textAnchor="middle" fontSize="9.5" fill="#121212">fikasi</text>
-              <path d="M202,55 L238,55" stroke="#F5F1E8" strokeWidth="1.5" fill="none" markerEnd="url(#a1)" />
-              <rect x="240" y="30" width="45" height="50" rx="4" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="262" y="59" textAnchor="middle" fontSize="10" fill="#F5F1E8">B40/70/100</text>
-              <line x1="40" y1="120" x2="260" y2="120" stroke="#3A3A3A" strokeWidth="1" />
-              <line x1="40" y1="120" x2="40" y2="90" stroke="#3A3A3A" strokeWidth="1" />
-              <path d="M50,115 C110,110 170,95 250,95" stroke="#C9A227" strokeWidth="2" fill="none" />
-              <text x="105" y="150" fontSize="9.5" fill="#B3ADA0">Efisiensi termal vs rasio campuran biodiesel</text>
+
+              <rect x="14" y="45" width="76" height="60" rx="9" fill="#242424" stroke="#3A3A3A" filter="url(#shadow1)" />
+              <circle cx="52" cy="65" r="8" fill="none" stroke="#C9A227" strokeWidth="1.4" />
+              <path d="M52,59 C55,63 55,67 52,71 C49,67 49,63 52,59Z" fill="#C9A227" opacity="0.9" />
+              <text x="52" y="87" textAnchor="middle" fontSize="8.6" fill="#B3ADA0">Minyak</text>
+              <text x="52" y="98" textAnchor="middle" fontSize="8.6" fill="#B3ADA0">jelantah</text>
+
+              <path d="M92,75 C102,75 106,75 116,75" stroke="#F5F1E8" strokeWidth="1.6" fill="none" markerEnd="url(#a1)" />
+
+              <rect x="118" y="35" width="80" height="80" rx="9" fill="url(#gold1)" filter="url(#shadow1)" />
+              <path d="M158,48 L158,60 L148,78 A11,11 0 0,0 168,78 L158,60" fill="none" stroke="#121212" strokeWidth="1.4" strokeLinejoin="round" />
+              <line x1="150" y1="54" x2="166" y2="54" stroke="#121212" strokeWidth="1.4" />
+              <text x="158" y="98" textAnchor="middle" fontSize="8.8" fill="#121212" fontWeight="600">Transesteri-</text>
+              <text x="158" y="110" textAnchor="middle" fontSize="8.8" fill="#121212" fontWeight="600">fikasi</text>
+
+              <path d="M200,75 C210,75 214,75 224,75" stroke="#F5F1E8" strokeWidth="1.6" fill="none" markerEnd="url(#a1)" />
+
+              <rect x="226" y="45" width="60" height="60" rx="9" fill="#242424" stroke="#3A3A3A" filter="url(#shadow1)" />
+              <rect x="246" y="58" width="20" height="26" rx="2" fill="none" stroke="#C9A227" strokeWidth="1.4" />
+              <rect x="250" y="53" width="12" height="7" rx="1" fill="#C9A227" />
+              <text x="256" y="98" textAnchor="middle" fontSize="9.5" fill="#F5F1E8" fontWeight="600">B100</text>
             </svg>
           </div>
 
           <div className="focus-card reverse">
-            <svg viewBox="0 0 300 180">
+            <svg viewBox="0 0 300 170">
               <defs>
                 <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
                   <path d="M2 1L8 5L2 9" fill="#F5F1E8" />
                 </marker>
+                <linearGradient id="gold2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#E3C158" />
+                  <stop offset="100%" stopColor="#B3891C" />
+                </linearGradient>
+                <filter id="shadow2" x="-30%" y="-30%" width="160%" height="160%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2.5" floodColor="#000" floodOpacity="0.45" />
+                </filter>
               </defs>
-              <rect x="20" y="90" width="120" height="50" rx="6" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="80" y="119" textAnchor="middle" fontSize="9.5" fill="#B3ADA0">Mesin diesel Panther</text>
-              <path d="M142,115 L178,115" stroke="#F5F1E8" strokeWidth="1.5" fill="none" markerEnd="url(#a2)" />
-              <rect x="180" y="60" width="55" height="45" rx="6" fill="#C9A227" />
-              <text x="207" y="86" textAnchor="middle" fontSize="9" fill="#121212">Motor listrik</text>
-              <rect x="180" y="115" width="55" height="45" rx="6" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="207" y="141" textAnchor="middle" fontSize="9" fill="#F5F1E8">Inverter</text>
-              <rect x="245" y="90" width="45" height="45" rx="6" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="267" y="116" textAnchor="middle" fontSize="9" fill="#F5F1E8">Baterai</text>
-              <line x1="237" y1="82" x2="243" y2="98" stroke="#F5F1E8" strokeWidth="1.2" />
-              <line x1="237" y1="148" x2="243" y2="126" stroke="#F5F1E8" strokeWidth="1.2" />
+
+              <rect x="10" y="16" width="78" height="42" rx="8" fill="#242424" stroke="#3A3A3A" filter="url(#shadow2)" />
+              <text x="49" y="41" textAnchor="middle" fontSize="8.6" fill="#B3ADA0">Mesin diesel</text>
+              <path d="M90,37 C104,37 108,58 122,58" stroke="#F5F1E8" strokeWidth="1.6" fill="none" markerEnd="url(#a2)" />
+
+              <rect x="10" y="112" width="78" height="42" rx="8" fill="url(#gold2)" filter="url(#shadow2)" />
+              <path d="M42,124 L34,140 L40,140 L36,150 L48,132 L41,132 Z" fill="#121212" />
+              <text x="58" y="137" textAnchor="middle" fontSize="8.6" fill="#121212" fontWeight="600">Motor</text>
+              <text x="58" y="147" textAnchor="middle" fontSize="8.6" fill="#121212" fontWeight="600">listrik</text>
+              <path d="M90,133 C104,133 108,112 122,112" stroke="#F5F1E8" strokeWidth="1.6" fill="none" markerEnd="url(#a2)" />
+
+              <rect x="124" y="65" width="66" height="42" rx="8" fill="#242424" stroke="#3A3A3A" filter="url(#shadow2)" />
+              <text x="157" y="90" textAnchor="middle" fontSize="8.6" fill="#B3ADA0">Transmisi</text>
+
+              <path d="M192,86 C202,86 206,86 216,86" stroke="#F5F1E8" strokeWidth="1.6" fill="none" markerEnd="url(#a2)" />
+              <rect x="218" y="65" width="60" height="42" rx="8" fill="#242424" stroke="#3A3A3A" filter="url(#shadow2)" />
+              <circle cx="236" cy="86" r="8" fill="none" stroke="#C9A227" strokeWidth="1.6" />
+              <circle cx="260" cy="86" r="8" fill="none" stroke="#C9A227" strokeWidth="1.6" />
+              <text x="248" y="102" textAnchor="middle" fontSize="8.2" fill="#F5F1E8">Roda</text>
+
+              <rect x="93" y="150" width="80" height="18" rx="5" fill="#1B1B1B" stroke="#3A3A3A" />
+              <text x="133" y="163" textAnchor="middle" fontSize="7.8" fill="#B3ADA0">Baterai ⇄ Inverter</text>
+              <path d="M58,154 C58,164 70,168 91,161" stroke="#C9A227" strokeWidth="1.3" fill="none" strokeDasharray="2.5,2.5" />
             </svg>
             <div>
               <span className="badge badge-course">Tugas Mata Kuliah</span>
               <div className="when">2024</div>
-              <h3>Konversi Kendaraan Hybrid</h3>
+              <h3>Konversi Kendaraan Hybrid (Paralel Hybrid)</h3>
               <p>
                 Berkontribusi mengonversi kendaraan diesel Panther 1994 menjadi sistem
-                motor listrik hybrid — menghitung spesifikasi baterai, motor listrik, dan
-                inverter, serta merancang diagram pengkabelan dan sinkronisasi daya.
+                paralel hybrid — mesin diesel dan motor listrik sama-sama terhubung ke
+                transmisi sehingga bisa menggerakkan roda sendiri-sendiri atau bersamaan.
+                Menghitung spesifikasi baterai, motor listrik, dan inverter, serta merancang
+                diagram pengkabelan dan sinkronisasi daya.
               </p>
             </div>
           </div>
@@ -207,25 +264,65 @@ function App() {
               <h3>Desain &amp; Simulasi Jaringan Distribusi Air Kampus</h3>
               <p>
                 Merancang jaringan perpipaan terintegrasi untuk distribusi air bersih
-                kampus, dengan pemodelan hidrolik &amp; simulasi di EPANET — termasuk
-                perhitungan kapasitas reservoir, spesifikasi pompa, dan analisis aliran fluida.
+                kampus, dengan pemodelan hidrolik &amp; simulasi di EPANET. Air dari
+                reservoir besar dipompa lewat pipa utama ke reservoir gedung, lalu
+                dibagi ke 3 cabang menuju tiap lantai — masing-masing cabang punya
+                pompa rumah sendiri yang menyedot air dari reservoir gedung.
               </p>
+              <div className="project-gallery">
+                <img src={epanetNetworkMap} alt="Network map simulasi EPANET" />
+                <img src={epanetGoogleEarth} alt="Skema jalur pipa di atas peta Google Earth" />
+                <img src={epanetIsometrik} alt="Gambar isometrik jalur perpipaan" />
+              </div>
             </div>
-            <svg viewBox="0 0 300 180">
-              <circle cx="50" cy="90" r="26" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="50" y="94" textAnchor="middle" fontSize="9" fill="#B3ADA0">Reservoir</text>
-              <line x1="76" y1="90" x2="130" y2="90" stroke="#F5F1E8" strokeWidth="2.5" />
-              <rect x="130" y="78" width="26" height="24" rx="4" fill="#C9A227" />
-              <text x="143" y="118" textAnchor="middle" fontSize="9" fill="#B3ADA0">Pompa</text>
-              <line x1="156" y1="90" x2="200" y2="90" stroke="#F5F1E8" strokeWidth="2.5" />
-              <line x1="200" y1="90" x2="200" y2="50" stroke="#F5F1E8" strokeWidth="2" />
-              <line x1="200" y1="90" x2="200" y2="130" stroke="#F5F1E8" strokeWidth="2" />
-              <line x1="200" y1="50" x2="250" y2="50" stroke="#F5F1E8" strokeWidth="1.5" />
-              <line x1="200" y1="130" x2="250" y2="130" stroke="#F5F1E8" strokeWidth="1.5" />
-              <circle cx="250" cy="50" r="5" fill="#2A2A2A" stroke="#3A3A3A" />
-              <circle cx="250" cy="130" r="5" fill="#2A2A2A" stroke="#3A3A3A" />
-              <text x="228" y="42" fontSize="8.5" fill="#B3ADA0">Gedung A</text>
-              <text x="228" y="146" fontSize="8.5" fill="#B3ADA0">Gedung B</text>
+            <svg viewBox="0 0 320 200">
+              <defs>
+                <linearGradient id="gold3" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#E3C158" />
+                  <stop offset="100%" stopColor="#B3891C" />
+                </linearGradient>
+                <filter id="shadow3" x="-30%" y="-30%" width="160%" height="160%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="2.5" floodColor="#000" floodOpacity="0.45" />
+                </filter>
+              </defs>
+
+              <circle cx="36" cy="100" r="30" fill="#242424" stroke="#3A3A3A" filter="url(#shadow3)" />
+              <text x="36" y="97" textAnchor="middle" fontSize="8.4" fill="#B3ADA0">Reservoir</text>
+              <text x="36" y="109" textAnchor="middle" fontSize="8.4" fill="#B3ADA0">Besar</text>
+
+              <line x1="66" y1="100" x2="122" y2="100" stroke="#F5F1E8" strokeWidth="3" strokeLinecap="round" />
+              <rect x="84" y="88" width="24" height="24" rx="6" fill="url(#gold3)" filter="url(#shadow3)" />
+              <path d="M92,94 L88,101 L92,101 L89,106 L100,97 L94,97 Z" fill="#121212" />
+              <text x="96" y="130" textAnchor="middle" fontSize="7.4" fill="#B3ADA0">Pompa besar</text>
+
+              <circle cx="152" cy="100" r="28" fill="#242424" stroke="#3A3A3A" filter="url(#shadow3)" />
+              <text x="152" y="97" textAnchor="middle" fontSize="8.4" fill="#B3ADA0">Reservoir</text>
+              <text x="152" y="109" textAnchor="middle" fontSize="8.4" fill="#B3ADA0">Gedung</text>
+
+              <path d="M180,100 C202,100 200,42 224,42" stroke="#F5F1E8" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+              <path d="M180,100 L224,100" stroke="#F5F1E8" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+              <path d="M180,100 C202,100 200,158 224,158" stroke="#F5F1E8" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+
+              <rect x="224" y="34" width="17" height="17" rx="4" fill="url(#gold3)" filter="url(#shadow3)" />
+              <circle cx="232.5" cy="42.5" r="4.2" fill="none" stroke="#121212" strokeWidth="1.2" />
+              <rect x="224" y="92" width="17" height="17" rx="4" fill="url(#gold3)" filter="url(#shadow3)" />
+              <circle cx="232.5" cy="100.5" r="4.2" fill="none" stroke="#121212" strokeWidth="1.2" />
+              <rect x="224" y="150" width="17" height="17" rx="4" fill="url(#gold3)" filter="url(#shadow3)" />
+              <circle cx="232.5" cy="158.5" r="4.2" fill="none" stroke="#121212" strokeWidth="1.2" />
+              <text x="232.5" y="26" textAnchor="middle" fontSize="6.6" fill="#B3ADA0">Pompa</text>
+              <text x="232.5" y="122" textAnchor="middle" fontSize="6.6" fill="#B3ADA0">Pompa</text>
+              <text x="232.5" y="180" textAnchor="middle" fontSize="6.6" fill="#B3ADA0">Pompa</text>
+
+              <line x1="241" y1="42" x2="254" y2="42" stroke="#F5F1E8" strokeWidth="2" strokeLinecap="round" />
+              <line x1="241" y1="100" x2="254" y2="100" stroke="#F5F1E8" strokeWidth="2" strokeLinecap="round" />
+              <line x1="241" y1="158" x2="254" y2="158" stroke="#F5F1E8" strokeWidth="2" strokeLinecap="round" />
+
+              <rect x="256" y="29" width="58" height="26" rx="6" fill="#242424" stroke="#3A3A3A" filter="url(#shadow3)" />
+              <text x="285" y="46" textAnchor="middle" fontSize="7.8" fill="#F5F1E8">Lantai 1</text>
+              <rect x="256" y="87" width="58" height="26" rx="6" fill="#242424" stroke="#3A3A3A" filter="url(#shadow3)" />
+              <text x="285" y="104" textAnchor="middle" fontSize="7.8" fill="#F5F1E8">Lantai 2</text>
+              <rect x="256" y="145" width="58" height="26" rx="6" fill="#242424" stroke="#3A3A3A" filter="url(#shadow3)" />
+              <text x="285" y="162" textAnchor="middle" fontSize="7.8" fill="#F5F1E8">Lantai 3</text>
             </svg>
           </div>
         </div>

@@ -75,6 +75,9 @@ nav a:hover{color:var(--accent);}
 .t-item ul{margin:14px 0 0; padding-left:20px; color:var(--ink-soft); font-size:0.92rem;}
 .t-item li + li{margin-top:6px;}
 
+.exp-photo{margin-top:18px; border-radius:6px; overflow:hidden; border:1px solid var(--line); max-width:420px;}
+.exp-photo img{width:100%; height:auto; display:block; aspect-ratio:16/10; object-fit:cover;}
+
 .badge{display:inline-block; font-size:0.7rem; font-weight:600; letter-spacing:0.05em; padding:5px 12px; border-radius:2px; margin-bottom:14px; text-transform:uppercase;}
 .badge-thesis{background:var(--accent); color:#121212;}
 .badge-course{background:transparent; color:var(--ink-soft); border:1px solid var(--line);}
@@ -86,6 +89,14 @@ nav a:hover{color:var(--accent);}
 .focus-card h3{font-size:1.35rem; margin-bottom:12px; margin-top:2px;}
 .focus-card p{color:var(--ink-soft); font-size:0.94rem;}
 .focus-card svg{width:100%; height:auto;}
+
+.project-gallery{display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; margin-top:18px;}
+.project-gallery img{
+  width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px;
+  border:1px solid var(--line); display:block; transition:transform 0.25s ease, border-color 0.25s ease;
+}
+.project-gallery img:hover{transform:scale(1.03); border-color:var(--accent);}
+.project-gallery:has(img:nth-child(3)):not(:has(img:nth-child(4))) img:first-child{grid-column:1 / -1; aspect-ratio:16/7;}
 
 .two-col{display:grid; grid-template-columns:1fr 1fr; gap:48px;}
 .mini-card{background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:24px;}
