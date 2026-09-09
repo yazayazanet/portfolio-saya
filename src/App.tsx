@@ -251,8 +251,7 @@ function App() {
                 Berkontribusi mengonversi kendaraan diesel Panther 1994 menjadi sistem
                 paralel hybrid — mesin diesel dan motor listrik sama-sama terhubung ke
                 transmisi sehingga bisa menggerakkan roda sendiri-sendiri atau bersamaan.
-                Menghitung spesifikasi baterai, motor listrik, dan inverter, serta merancang
-                diagram pengkabelan dan sinkronisasi daya.
+
               </p>
             </div>
           </div>
