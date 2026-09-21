@@ -152,7 +152,7 @@ SolidWorks · Autodesk Inventor · ANSYS Fluent · CAEPIPE · EPANET · AutoCAD 
 > **PRODUKSI BIODIESEL DARI MINYAK JELANTAH DAN ANALISIS PERFORMA SERTA EMISI GAS BUANG MESIN DIESEL**
 
 **Description:**  
-> Memformulasi biodiesel ramah lingkungan dari minyak jelantah melalui proses transesterifikasi dan pencucian aquades. Menguji variasi campuran (B40, B70, B100) dibandingkan Pertamina Dex pada dyno test untuk mengevaluasi konsumsi BBM, torsi, daya, efisiensi termal, serta opasitas emisi gas buang.
+> Membuat biodiesel dari minyak jelantah melalui proses transesterifikasi sebagai eksperimen produksi, serta memurnikan biodiesel komersial dengan pencucian bertingkat menggunakan aquades untuk kemudian diuji dalam variasi campuran B40, B70, dan B100 dibandingkan Pertamina Dex pada dyno test — menganalisis konsumsi BBM spesifik, efisiensi termal, daya, torsi, dan opasitas emisi gas buang.
 
 **Key highlights:**
 - Sintesis biodiesel via transesterifikasi dan pemurnian air

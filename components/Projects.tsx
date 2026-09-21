@@ -21,7 +21,7 @@ const projects: Project[] = [
     title: "Produksi Biodiesel Jelantah & Analisis Emisi Mesin Diesel",
     category: "Tugas Akhir · Rekayasa Konversi Energi",
     description:
-      "Memformulasi biodiesel dari minyak jelantah lewat proses transesterifikasi dan pemurnian bertingkat dengan aquades. Menguji variasi campuran bahan bakar (B40, B70, B100) dibandingkan Pertamina Dex pada dyno test untuk menganalisis konsumsi BBM spesifik, efisiensi termal mesin, daya, torsi, dan tingkat opasitas emisi gas buang.",
+      "Membuat biodiesel dari minyak jelantah melalui proses transesterifikasi sebagai eksperimen produksi, serta memurnikan biodiesel komersial dengan pencucian bertingkat menggunakan aquades untuk kemudian diuji dalam variasi campuran B40, B70, dan B100 dibandingkan Pertamina Dex pada dyno test — menganalisis konsumsi BBM spesifik, efisiensi termal, daya, torsi, dan opasitas emisi gas buang.",
     highlights: [
       "Formulasi reaksi transesterifikasi minyak jelantah & pemurnian",
       "Karakterisasi campuran bahan bakar alternatif: B40, B70, dan B100 murni",

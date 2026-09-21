@@ -14,47 +14,31 @@ const techStack: TechItem[] = [
   },
   {
     name: "Autodesk Inventor",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maya/maya-original.svg",
+    icon: "/inventor.png",
   },
   {
     name: "ANSYS Fluent (CFD)",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg",
+    icon: "/ansys-fluent.png",
   },
   {
     name: "CAEPIPE (Stress)",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg",
+    icon: "/caepipe.png",
   },
   {
     name: "EPANET (Hydraulics)",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+    icon: "/epanet.png",
   },
   {
     name: "AutoCAD 2D",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+    icon: "/autocad.png",
   },
   {
     name: "Biodiesel Testing",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
   },
   {
-    name: "Hybrid Powertrain",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-  },
-  {
-    name: "Project Logistics",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-plain.svg",
-  },
-  {
-    name: "Supply Chain",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
-  },
-  {
     name: "Git & Version Control",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-  },
-  {
-    name: "React & TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
 ];
 

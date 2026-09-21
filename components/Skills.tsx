@@ -126,25 +126,11 @@ export function Skills() {
             </span>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {arsenal.map((skill, idx) => (
-              <div key={idx} className="space-y-2">
-                <div className="flex justify-between items-center text-sm font-semibold">
-                  <div className="flex flex-col">
-                    <span className="text-foreground text-sm font-bold">{skill.name}</span>
-                    <span className="text-xs text-muted-foreground font-normal">{skill.category}</span>
-                  </div>
-                  <span className="text-primary font-mono text-xs">{skill.level}%</span>
-                </div>
-                <div className="h-2.5 w-full bg-muted/40 rounded-full overflow-hidden border border-border/30">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1, delay: idx * 0.1, ease: "easeOut" }}
-                    viewport={{ once: true }}
-                  />
-                </div>
+              <div key={idx} className="flex flex-col">
+                <span className="text-foreground text-sm font-bold">{skill.name}</span>
+                <span className="text-xs text-muted-foreground font-normal">{skill.category}</span>
               </div>
             ))}
           </div>
