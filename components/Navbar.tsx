@@ -73,19 +73,19 @@ export function Navbar() {
           onClick={() => scrollToSection("#home")}
           className="cursor-pointer font-extrabold text-lg flex items-center gap-3 group select-none"
         >
-          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 via-primary to-sky-400 p-[1px] shadow-lg group-hover:scale-105 transition-transform duration-300">
+          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 via-primary to-orange-400 p-[1px] shadow-lg group-hover:scale-105 transition-transform duration-300">
             <div className="w-full h-full bg-background rounded-[11px] flex items-center justify-center">
-              <span className="font-extrabold text-xs tracking-tighter bg-gradient-to-r from-purple-500 to-sky-400 bg-clip-text text-transparent">
-                ZKR
+              <span className="font-extrabold text-xs tracking-tighter bg-gradient-to-r from-amber-500 to-orange-400 bg-clip-text text-transparent">
+                MBY
               </span>
             </div>
           </div>
           <div className="flex flex-col text-left">
             <span className="font-extrabold tracking-tight text-foreground text-sm leading-none group-hover:text-primary transition-colors">
-              Zidni Khaerur Rizqia
+              Muhammad Bama Yaza
             </span>
             <span className="text-[9px] font-bold text-muted-foreground tracking-widest uppercase mt-0.5">
-              Portfolio
+              Engineering Portfolio
             </span>
           </div>
         </a>

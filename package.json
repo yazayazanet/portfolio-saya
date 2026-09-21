@@ -2,6 +2,22 @@
   "name": "zkr-portfolio",
   "version": "1.0.0",
   "private": true,
+  "description": "",
+  "homepage": "https://github.com/zidnirizqia/26-09-15-clonev2#readme",
+  "bugs": {
+    "url": "https://github.com/zidnirizqia/26-09-15-clonev2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidnirizqia/26-09-15-clonev2.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "target-bundle.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

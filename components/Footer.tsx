@@ -5,17 +5,18 @@ import { ArrowUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const rotatingTitles = [
-  "Informatics Graduate",
-  "Software Developer",
-  "Computer Vision Enthusiast",
-  "Web Developer",
+  "Mechanical Engineer",
+  "Energy Conversion Specialist",
+  "Thermal-Fluid & Piping Analyst",
+  "ITS Surabaya Graduate",
 ];
 
 const footerNav = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Education", href: "#education" },
+  { name: "Experience", href: "#career" },
   { name: "Projects", href: "#projects" },
+  { name: "Education", href: "#education" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];
@@ -50,12 +51,12 @@ export function Footer() {
 
         {/* Badge */}
         <span className="text-xs font-extrabold uppercase tracking-widest text-primary mb-4 bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20 shadow-sm">
-          LEARN · BUILD · IMPROVE
+          DESIGN · SIMULATE · BUILD · OPERATE
         </span>
 
         {/* Headline */}
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4 tracking-tight">
-          Turning Ideas into Practical Technology
+          Engineering Sustainable Energy &amp; Mechanical Systems
         </h3>
 
         {/* Rotating Titles with Smooth Blur Crossfade */}
@@ -67,7 +68,7 @@ export function Footer() {
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               exit={{ opacity: 0, y: -15, filter: "blur(10px)" }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="text-2xl sm:text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-500 via-primary to-sky-400 bg-clip-text text-transparent select-none tracking-tight"
+              className="text-2xl sm:text-4xl md:text-5xl font-black bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-400 bg-clip-text text-transparent select-none tracking-tight"
             >
               {rotatingTitles[titleIdx]}
             </motion.span>
@@ -75,7 +76,7 @@ export function Footer() {
         </div>
 
         <p className="text-sm font-semibold text-muted-foreground mt-4 tracking-widest uppercase">
-          Build. Test. Learn. Improve.
+          Analyze. Design. Validate. Optimize.
         </p>
       </div>
 
@@ -96,7 +97,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-muted-foreground text-xs sm:text-sm font-normal">
-          © {new Date().getFullYear()} Zidni Khaerur Rizqia. All rights reserved.
+          © {new Date().getFullYear()} Muhammad Bama Yaza. All rights reserved.
         </div>
 
         {/* Back to top */}
@@ -104,7 +105,7 @@ export function Footer() {
           onClick={scrollToTop}
           className="px-4 py-2 rounded-full glass-panel border border-foreground/10 text-foreground text-xs font-bold hover:border-primary/40 hover:text-primary transition-all flex items-center gap-1.5 shadow-sm hover:scale-105 cursor-pointer"
         >
-          <span>Back to top</span>
+          <span>Kembali ke atas</span>
           <ArrowUp className="w-3.5 h-3.5" />
         </button>
       </div>

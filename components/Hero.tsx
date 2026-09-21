@@ -23,10 +23,10 @@ export function Hero() {
   };
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:zidnikhaerur@gmail.com", label: "Email" },
-    { icon: MessageSquare, href: "https://wa.me/628xxxxxxxxxx", label: "WhatsApp" },
+    { icon: Github, href: "https://github.com/yazayazanet", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/bamayaza", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:bamayaza@gmail.com", label: "Email" },
+    { icon: MessageSquare, href: "https://wa.me/6282110681473", label: "WhatsApp" },
   ];
 
   return (
@@ -51,23 +51,23 @@ export function Hero() {
             className="mb-4 text-center md:text-left w-full"
           >
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-2">
-              Hi, I&apos;m
+              Halo, saya
             </h1>
 
             {/* Light Mode Gradient */}
             <div className="block dark:hidden">
-              <span className="bg-gradient-to-r from-violet-600 via-sky-500 to-indigo-600 bg-clip-text text-transparent font-extrabold text-[clamp(2.2rem,5vw,4.2rem)] leading-tight tracking-tight block pb-2 select-none">
-                Zidni Khaerur Rizqia
+              <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-amber-700 bg-clip-text text-transparent font-extrabold text-[clamp(2.2rem,5vw,4.2rem)] leading-tight tracking-tight block pb-2 select-none">
+                Muhammad Bama Yaza
               </span>
             </div>
 
             {/* Dark Mode Aurora Animated Text */}
             <div className="hidden dark:block">
               <AuroraText
-                text="Zidni Khaerur Rizqia"
+                text="Muhammad Bama Yaza"
                 fontSize="clamp(2.2rem, 5vw, 4.2rem)"
                 className="bg-transparent overflow-visible p-0 justify-start"
-                textClassName="bg-gradient-to-r from-cyan-400 via-purple-400 to-sky-300 bg-clip-text text-transparent pb-2 font-extrabold"
+                textClassName="bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-300 bg-clip-text text-transparent pb-2 font-extrabold"
               />
             </div>
           </motion.div>
@@ -78,11 +78,10 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Informatics graduate from Universitas Gunadarma with hands-on
-            experience in web application development and computer vision. I
-            enjoy turning technical problems into practical solutions—from
-            building a food-ordering website with a loyalty point system to
-            developing vehicle detection, tracking, and counting pipelines.
+            Lulusan D4 Teknik Mesin Industri ITS dengan fokus pada Rekayasa
+            Konversi Energi, pemodelan sistem mekanikal &amp; perpipaan, serta
+            simulasi rekayasa (CFD &amp; Stress Analysis). Berpengalaman kerja
+            langsung di PT Bukit Asam dan manajemen logistik proyek 150 kV Smelter Manyar.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -94,9 +93,9 @@ export function Hero() {
           >
             <button
               onClick={scrollToProjects}
-              className="rounded-full px-7 h-12 bg-primary text-primary-foreground font-semibold flex items-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+              className="rounded-full px-7 h-12 bg-primary text-primary-foreground font-semibold flex items-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
-              <span>View My Projects</span>
+              <span>Lihat Proyek Teknik</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 
@@ -104,7 +103,7 @@ export function Hero() {
               onClick={scrollToContact}
               className="rounded-full px-7 h-12 glass-panel border border-foreground/15 text-foreground font-semibold flex items-center gap-2 hover:border-primary/40 hover:bg-foreground/5 transition-all shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
-              Let&apos;s Connect
+              Hubungi Saya
             </button>
           </motion.div>
 

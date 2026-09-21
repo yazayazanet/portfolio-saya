@@ -1,14 +1,14 @@
-# Copywriting — Zidni Khaerur Rizqia Portfolio
+# Copywriting — Muhammad Bama Yaza Portfolio
 
-> Updated portfolio copy focused on academic projects, applied software development, computer vision, and web development experience.
+> Master copywriting portofolio yang disesuaikan untuk profil Muhammad Bama Yaza (D4 Teknik Mesin Industri ITS — Rekayasa Konversi Energi, simulasi fluida & perpipaan, dan operasional industri).
 
 ---
 
 ## Navbar
 
-- **Logo initials:** ZKR
-- **Name:** Zidni Khaerur Rizqia
-- **Subtitle:** Portfolio
+- **Logo initials:** MBY
+- **Name:** Muhammad Bama Yaza
+- **Subtitle:** Engineering Portfolio
 
 ### Navigation links
 
@@ -16,8 +16,9 @@
 |---|---|
 | Home | #home |
 | About | #about |
-| Education | #education |
+| Experience | #career |
 | Projects | #projects |
+| Education | #education |
 | Skills | #skills |
 | Contact | #contact |
 
@@ -27,44 +28,48 @@
 
 ### Heading
 
-> Hi, I'm  
-> **Zidni Khaerur Rizqia**
+> Halo, saya  
+> **Muhammad Bama Yaza**
+
+### Sub-heading / Eyebrow
+
+> Teknik Mesin Industri — Rekayasa Konversi Energi (ITS)
 
 ### Body
 
-> Informatics graduate from Universitas Gunadarma with hands-on experience in web application development and computer vision. I enjoy turning technical problems into practical solutions—from building a food-ordering website with a loyalty point system to developing vehicle detection, tracking, and counting pipelines.
+> Lulusan D4 Teknik Mesin Industri ITS dengan fokus pada Rekayasa Konversi Energi, pemodelan sistem mekanikal & perpipaan, serta simulasi rekayasa (CFD & Stress Analysis). Memiliki pengalaman kerja langsung di industri pertambangan (PT Bukit Asam) dan manajemen logistik proyek konstruksi kabel bawah tanah (Smelter Manyar 150 kV).
 
 ### CTA button
 
-> View My Projects →
+> Lihat Proyek Teknik →
 
 ### Secondary CTA
 
-> Let's Connect
+> Hubungi Saya
 
 ### Social links
 
 | Platform | URL |
 |---|---|
-| GitHub | https://github.com |
-| LinkedIn | https://linkedin.com |
-| Email | mailto:zidnikhaerur@gmail.com |
-| WhatsApp | https://wa.me/628xxxxxxxxxx |
+| GitHub | https://github.com/yazayazanet |
+| LinkedIn | https://linkedin.com/in/bamayaza |
+| Email | mailto:bamayaza@gmail.com |
+| WhatsApp | https://wa.me/6282110681473 |
 
 ### ID Card
 
 | Field | Value |
 |---|---|
-| Initials | ZKR |
-| Name | Zidni Khaerur Rizqia |
-| Title | Informatics Graduate & Software Developer |
-| Specialty | WEB DEVELOPMENT · COMPUTER VISION · SOFTWARE PROJECTS |
-| Location | Jakarta Timur, Indonesia |
-| Experience | Fresh Graduate · Academic & Applied Projects |
+| Initials | MBY |
+| Name | Muhammad Bama Yaza |
+| Title | Mechanical & Energy Conversion Engineer |
+| Specialty | THERMAL-FLUID SYSTEMS · PIPING & CFD · ENERGY CONVERSION |
+| Location | Surabaya, Indonesia |
+| Experience | Industrial Internship & Applied Engineering Projects |
 | Status | ● Open to Opportunities |
-| Barcode | ZKR-2026-DEV |
+| Barcode | MBY-2026-ENG |
 
-- **Caption:** Explore my work and technical journey
+- **Caption:** Portofolio Rekayasa Mekanikal, Konversi Energi & Simulasi Teknik
 
 ---
 
@@ -72,22 +77,22 @@
 
 ### Heading
 
-> Building **Practical Software** through **Development, Experimentation, and Technology**
+> Menerapkan **Rekayasa Mekanikal & Konversi Energi** melalui **Simulasi Presisi, Riset Terapan, dan Operasional Lapangan**
 
 ### Body
 
-> I am an Informatics graduate from Universitas Gunadarma with experience in software development and applied technology projects. My work spans web-based systems and computer vision. I developed a food-ordering website for Mie Ayam Mas Jo with a loyalty point system and worked on vehicle detection, tracking, and counting using YOLOv8 and Deep SORT.
+> Saya merupakan lulusan D4 Teknik Mesin Industri dari Institut Teknologi Sepuluh Nopember (ITS) dengan spesialisasi Rekayasa Konversi Energi (IPK 3.41/4.00). Fokus keahlian saya mencakup pemodelan termal-fluida, analisis tegangan pipa, perancangan mekanikal, dan energi terbarukan.
 >
-> I am comfortable learning new tools, testing different approaches, analyzing results, and documenting the development process. I am especially interested in opportunities where software engineering, intelligent systems, and practical problem solving come together.
+> Pengalaman industri saya mencakup analisis pemeliharaan sistem mekanikal gearbox conveyor dan perancangan alat bantu kerja di PT Bukit Asam, serta koordinasi rantai pasok material pada proyek kabel tanah 150 kV Smelter Manyar. Saya terbiasa menggunakan software simulasi rekayasa standar industri seperti ANSYS Fluent, CAEPIPE, EPANET, Autodesk Inventor, dan SolidWorks.
 
 ### Stats
 
 | Value | Label |
 |---|---|
-| Gunadarma | Alma Mater |
-| 3+ | Major Academic & Applied Projects |
-| Web + AI | Development Focus |
-| End-to-End | Build · Test · Analyze · Document |
+| ITS | Institut Teknologi Sepuluh Nopember |
+| 3.41 | IPK dari 4.00 (D4 Teknik Mesin Industri) |
+| 2+ | Pengalaman Kerja Industri |
+| End-to-End | Design · Simulate · Test · Optimize |
 
 ---
 
@@ -95,7 +100,7 @@
 
 ### Stack items
 
-Python · YOLOv8 · Deep SORT · OpenCV · JavaScript · React · TypeScript · HTML5 · CSS3 · Tailwind CSS · Git · GitHub · Docker · Kubernetes · Linux · cPanel
+SolidWorks · Autodesk Inventor · ANSYS Fluent · CAEPIPE · EPANET · AutoCAD 2D · CFD Analysis · Pipe Stress · Transesterifikasi · Hybrid Powertrain · Project Logistics · Git · React · TypeScript
 
 ---
 
@@ -103,15 +108,15 @@ Python · YOLOv8 · Deep SORT · OpenCV · JavaScript · React · TypeScript · 
 
 ### Section subtitle
 
-> Developing practical software, intelligent vision pipelines, and user-focused digital solutions
+> Solusi rekayasa mekanikal, optimasi konversi energi, dan analisis fluida-struktur terpadu
 
 ### Service cards
 
 | Title | Description |
 |---|---|
-| Web Application Development | Building responsive web applications and translating real business needs into practical digital features, including ordering workflows and customer loyalty systems. |
-| Computer Vision & Tracking | Developing object detection, multi-object tracking, and vehicle-counting experiments using YOLOv8, Deep SORT, OpenCV, and Python. |
-| Testing & Technical Documentation | Conducting system testing, evaluating results, documenting methodologies, and communicating technical findings in academic and project reports. |
+| Perancangan Sistem Fluida & Perpipaan | Merancang jaringan pipa, kalkulasi hidrolik, dan pemodelan jalur pipa distribusi menggunakan EPANET serta analisis tegangan pipa (stress analysis) dengan CAEPIPE. |
+| Simulasi Komputasi Teknik (CFD & CAD) | Melakukan simulasi dinamika fluida menggunakan ANSYS Fluent, pemodelan 3D mesin & peralatan industri dengan Autodesk Inventor dan SolidWorks, serta pembuatan gambar teknik isometrik / 2D CAD. |
+| Riset Konversi Energi & Bahan Bakar Terbarukan | Formulasi bahan bakar alternatif (biodiesel transesterifikasi), pengujian performa mesin diesel pada dyno test, analisis konsumsi bahan bakar, dan studi konversi sistem powertrain hybrid. |
 
 ---
 
@@ -121,150 +126,138 @@ Python · YOLOv8 · Deep SORT · OpenCV · JavaScript · React · TypeScript · 
 
 | Area | Technologies / Competencies |
 |---|---|
-| Programming | Python, JavaScript, TypeScript |
-| Web Development | HTML5, CSS3, React, Tailwind CSS, responsive UI development |
-| Computer Vision | YOLOv8, Deep SORT, OpenCV, object detection, tracking, vehicle counting |
-| Development Workflow | Git, GitHub, Linux, Docker, Kubernetes |
-| Deployment | cPanel, web hosting, basic DNS and deployment workflows |
-| Research | Experiment design, performance evaluation, technical documentation, academic writing |
+| SolidWorks & CAD 3D | 92% |
+| Autodesk Inventor | 90% |
+| ANSYS Fluent (CFD) | 85% |
+| CAEPIPE (Stress Analysis) | 82% |
+| EPANET (Hydraulic Modeling) | 88% |
+| AutoCAD 2D & Isometric | 86% |
 
 ### Professional Traits
 
-- Analytical and algorithmic problem solving
-- Research-oriented experimentation and evaluation
-- End-to-end project documentation
-- Iterative debugging and system improvement
-- Independent learning and adaptation to new tools
-- Collaboration on academic and technical projects
-
-### Summary card
-
-> **Software Development + Applied Technology**  
-> Experience building web applications and experimenting with computer vision systems through structured testing, iteration, and technical documentation.
+- Analisis Berbasis Data Uji Laboratorium & Simulasi
+- Pemodelan Hidrolika & Sistem Perpipaan
+- Rekayasa Konversi Energi & Bahan Bakar Alternatif
+- Pemeliharaan Peralatan Mekanikal & Alat Berat
+- Manajemen Rantai Pasok & Logistik Proyek
+- Kolaborasi Lintas Disiplin Teknik & Lapangan
 
 ---
 
 ## Projects — "Selected Works"
 
-### 1. Scientific Writing Project — Mie Ayam Mas Jo Food Ordering Website
+### 1. Tugas Akhir — Produksi Biodiesel Jelantah & Analisis Emisi Mesin Diesel
 
 **Title:**  
-> **PEMBUATAN APLIKASI PEMESANAN MAKANAN BERBASIS WEBSITE DENGAN SISTEM POIN LOYALITAS PADA MIE AYAM MAS JO**
+> **PRODUKSI BIODIESEL DARI MINYAK JELANTAH DAN ANALISIS PERFORMA SERTA EMISI GAS BUANG MESIN DIESEL**
 
-**Description:**
-
-> Developed a web-based food ordering application for Mie Ayam Mas Jo as a scientific writing project. The system was designed to make the ordering process more accessible while introducing a loyalty point mechanism that rewards repeat customers. The project covered requirement analysis, interface and feature development, system implementation, testing, and technical documentation as part of the academic development process.
+**Description:**  
+> Memformulasi biodiesel ramah lingkungan dari minyak jelantah melalui proses transesterifikasi dan pencucian aquades. Menguji variasi campuran (B40, B70, B100) dibandingkan Pertamina Dex pada dyno test untuk mengevaluasi konsumsi BBM, torsi, daya, efisiensi termal, serta opasitas emisi gas buang.
 
 **Key highlights:**
+- Sintesis biodiesel via transesterifikasi dan pemurnian air
+- Formulasi variasi campuran bahan bakar B40, B70, dan B100 murni
+- Pengujian konsumsi bahan bakar spesifik pada mesin diesel uji
+- Evaluasi torsi, daya, dan efisiensi termal lewat dynamometer (dyno test)
+- Analisis komparasi tingkat opasitas dan emisi gas buang terhadap Pertamina Dex
 
-- Web-based food ordering workflow
-- Customer loyalty point system
-- Practical implementation for a real food business case
-- System testing and academic documentation
-- Focus on usability and an accessible customer experience
-
-**Tags:** `Web Development` · `Food Ordering System` · `Loyalty Points` · `Academic Project`
+**Tags:** `Biodiesel` · `Transesterifikasi` · `Mesin Diesel` · `Dyno Test` · `Analisis Emisi`
 
 ---
 
-### 2. Automated Vehicle Detection, Tracking & Counting System
+### 2. Desain & Simulasi Jaringan Distribusi Air Bersih Kampus
 
-**Description:**
+**Title:**  
+> **DESAIN DAN SIMULASI HIDROLIK JARINGAN DISTRIBUSI AIR BERSIH MULTI-LANTAI MENGGUNAKAN EPANET**
 
-> Developed and tested a computer vision pipeline for detecting, tracking, and counting vehicles from video footage. YOLOv8 was used for object detection, while Deep SORT maintained object identities across frames. Directional line-crossing logic was then applied to count vehicle movement while reducing duplicate counts.
+**Description:**  
+> Merancang jaringan perpipaan terintegrasi untuk distribusi air bersih gedung kampus secara komprehensif. Mengintegrasikan pemodelan kontur spasial Google Earth, skema isometrik pipa, dan simulasi hidrolik EPANET untuk memvalidasi tekanan, head loss, dan kontinuitas debit dari reservoir utama hingga reservoir gedung dan booster pump tiap lantai.
 
 **Key highlights:**
+- Pemodelan hidrolik sistem tertutup & terbuka pada software EPANET
+- Perancangan distribusi bertingkat (Reservoir Utama → Reservoir Gedung → Booster Lantai 1, 2, 3)
+- Analisis head loss pipa, pressure drop fitting, dan kontinuitas debit
+- Pemetaan jalur perpipaan aktual dengan overlay Google Earth
+- Gambar kerja isometrik perpipaan standar teknik
 
-- Vehicle detection using YOLOv8
-- Multi-object tracking with Deep SORT
-- OpenCV-based video processing
-- Directional line-crossing and counting logic
-- Model testing using recorded traffic footage
-
-**Tags:** `Python` · `YOLOv8` · `Deep SORT` · `OpenCV` · `Computer Vision`
+**Tags:** `EPANET` · `Simulasi Hidrolik` · `Sistem Perpipaan` · `Gambar Isometrik` · `Google Earth`
 
 ---
 
-### 3. Modern Frontend & Containerization Practice
+### 3. Pemeliharaan Mekanikal & Rekayasa Alat Bantu PT Bukit Asam
 
-**Description:**
+**Title:**  
+> **ANALISIS SISTEM MEKANIKAL GEARBOX CONVEYOR & PERANCANGAN ALAT BANTU INDUSTRI**
 
-> Explored modern frontend development using React and TypeScript while practicing structured source-control workflows and container-based development concepts. This work strengthened my understanding of reusable UI components, type-safe development, Git workflows, and deployment-oriented engineering practices.
+**Description:**  
+> Pengalaman magang industri di PT Bukit Asam Tanjung Enim: menganalisis sistem mekanikal gearbox conveyor tambang batubara, mengevaluasi heat exchanger pendingin pelumas, serta merancang alat bantu mekanikal berupa Drum Lifter untuk efisiensi pengisian oli dan prototipe Mobile Crane untuk penanganan material pada mesin bubut.
 
-**Tags:** `React` · `TypeScript` · `Git` · `Docker` · `Kubernetes`
+**Key highlights:**
+- Analisis mekanikal & inspeksi keausan gearbox conveyor batubara
+- Evaluasi efektivitas heat exchanger untuk pendinginan pelumas gearbox
+- Perancangan Drum Lifter ergonomis pengisi oli di Autodesk Inventor
+- Perancangan prototipe Mobile Crane bengkel reparasi mesin bubut
+- Dokumentasi pemeliharaan preventif dan korektif peralatan berat
+
+**Tags:** `Autodesk Inventor` · `PT Bukit Asam` · `Gearbox Maintenance` · `Drum Lifter` · `Mobile Crane`
 
 ---
 
 ## Education — "Academic Background"
 
-### Section subtitle
-
-> Academic foundation in Informatics, software development, and applied computing
-
 ### Degree card
 
 | Field | Value |
 |---|---|
-| Status | Fresh Graduate (2026) |
-| Degree | Sarjana Komputer (S.Kom.) |
-| Major | Informatics |
-| Institution | Universitas Gunadarma |
+| Status | Lulus (2026) |
+| Degree | Sarjana Terapan Teknik (S.Tr.T.) / D4 Teknik Mesin Industri |
+| Major | Rekayasa Konversi Energi |
+| Institution | Institut Teknologi Sepuluh Nopember (ITS) |
 | Period | 2022 – 2026 |
+| IPK | 3.41 / 4.00 |
 
 ### Focus areas
 
-- Software and web application development
-- Algorithms and programming
-- Computer vision and image processing
-- Artificial intelligence and applied machine learning
-- Database and information-system fundamentals
-- Technical research, testing, and documentation
+- Termodinamika Teknik & Perpindahan Panas
+- Mekanika Fluida, Dinamika Aliran & Sistem Perpipaan
+- Teknologi Mesin Pembakaran Dalam & Turbocharger
+- Energi Baru & Terbarukan (Biofuel, Solar, Hybrid Systems)
+- Perancangan Mekanikal & Elemen Mesin
+- Simulasi Numerik Berbantuan Komputer (ANSYS Fluent CFD & CAEPIPE)
 
 ---
 
-## Timeline — "Project Timeline"
-
-### Section subtitle
-
-> Selected milestones from academic study, software development, and computer vision projects
+## Timeline — "Milestones"
 
 | Period | Title | Description |
 |---|---|---|
-| Academic Study | Mie Ayam Mas Jo Food Ordering Website | Developed a web-based food ordering application with a customer loyalty point system as a scientific writing project. |
-| Applied Project | Vehicle Detection, Tracking & Counting | Built a YOLOv8 and Deep SORT computer vision pipeline for detecting, tracking, and counting vehicles from video. |
-| 2026 | Bachelor Completion | Completed the Informatics undergraduate program at Universitas Gunadarma and earned the Sarjana Komputer (S.Kom.) degree. |
+| Jul 2023 – Aug 2023 | Logistics Staff — Proyek Smelter 150 kV Manyar | Mengelola administrasi & rantai pasok material teknis proyek kabel bawah tanah di Gresik. |
+| 2024 | Konversi Kendaraan Paralel Hybrid | Merancang integrasi motor listrik dan mesin diesel Panther 1994, kapasitas baterai, dan wiring diagram. |
+| Feb 2025 – Jun 2025 | Mechanical Intern — PT Bukit Asam | Analisis sistem mekanikal gearbox conveyor tambang, perancangan drum lifter dan prototipe mobile crane. |
+| Sep 2025 – Mei 2026 | Riset Tugas Akhir Biodiesel & Emisi | Formulasi biodiesel minyak jelantah dan pengujian dyno test serta opasitas emisi mesin diesel. |
+| 2026 | Kelulusan Sarjana Terapan ITS | Menyelesaikan studi D4 Teknik Mesin Industri ITS konsentrasi Rekayasa Konversi Energi (IPK 3.41). |
 
 ---
 
-## Contact — "Let's Connect"
+## Contact — "Mari Terhubung"
 
 ### Body
 
-> I am open to opportunities in Software Engineering, Web Development, Computer Vision, and other technology roles where I can continue learning while contributing to real-world projects. Feel free to reach out for collaboration, technical discussions, or professional opportunities.
+> Terbuka untuk peluang karir di bidang Mechanical Engineering, Energy Conversion, Piping & Fluid Systems, Maintenance & Reliability, serta Project Engineering. Siap berdiskusi untuk kolaborasi dan peluang profesional.
 
 ### Contact info
 
 | Type | Value | Link |
 |---|---|---|
-| Email | zidnikhaerur@gmail.com | mailto:zidnikhaerur@gmail.com |
-| Location | Jakarta Timur, Indonesia | — |
-
-### Form fields
-
-| Label | Placeholder |
-|---|---|
-| Your Name | Jane Doe |
-| Your Email/WhatsApp | name@example.com |
-| Message | Tell me about your project or opportunity... |
-
-### Submit button
-
-> Send Message →
+| Email | bamayaza@gmail.com | mailto:bamayaza@gmail.com |
+| Location | Surabaya, Jawa Timur, Indonesia | — |
+| WhatsApp | +62 821-1068-1473 | https://wa.me/6282110681473 |
+| LinkedIn | Muhammad Bama Yaza | https://linkedin.com/in/bamayaza |
 
 ### WhatsApp message template
 
-> `Halo Zidni, saya {name}. {message}`  
-> Target: `https://wa.me/628xxxxxxxxxx`
+> `Halo Bama, saya {name}. {message}`  
+> Target: `https://wa.me/6282110681473`
 
 ---
 
@@ -272,60 +265,23 @@ Python · YOLOv8 · Deep SORT · OpenCV · JavaScript · React · TypeScript · 
 
 ### Badge
 
-> LEARN · BUILD · IMPROVE
+> DESIGN · SIMULATE · BUILD · OPERATE
 
 ### Animated banner headline
 
-> Turning Ideas into Practical Technology
+> Engineering Sustainable Energy and Precision Mechanical Systems
 
 ### Rotating titles
 
-1. Informatics Graduate
-2. Software Developer
-3. Computer Vision Enthusiast
-4. Web Developer
+1. Mechanical Engineer
+2. Energy Conversion Specialist
+3. Thermal-Fluid & Piping Analyst
+4. ITS Surabaya Graduate
 
 ### Sub-text
 
-> Build. Test. Learn. Improve.
-
-### Footer navigation
-
-Home · About · Education · Projects · Skills · Contact
+> Analyze. Design. Validate. Optimize.
 
 ### Copyright
 
-> © 2026 Zidni Khaerur Rizqia. All rights reserved.
-
-### Back to top button
-
-> Back to top ↑
-
----
-
-## Dock Bar (mobile bottom nav)
-
-| Icon | Label | Anchor |
-|---|---|---|
-| Home | Home | #home |
-| User | About | #about |
-| FolderOpen | Projects | #projects |
-| GraduationCap | Education | #education |
-| Cpu | Skills | #skills |
-| Send | Contact | #contact |
-
----
-
-## Short Portfolio Bio Variants
-
-### General
-
-> Informatics graduate from Universitas Gunadarma with project experience in web development and computer vision. Experienced in building a web-based food ordering system with loyalty points and developing YOLOv8 and Deep SORT vehicle-detection, tracking, and counting pipelines.
-
-### Software / Web Focus
-
-> Informatics graduate with hands-on experience developing practical web applications and technical projects. Built a web-based food ordering application for Mie Ayam Mas Jo featuring a loyalty point system, alongside experience with React, TypeScript, Python, Git, and deployment workflows.
-
-### AI / Computer Vision Focus
-
-> Informatics graduate interested in applied AI and computer vision, with hands-on experience using YOLOv8, Deep SORT, OpenCV, and Python for vehicle detection, tracking, and counting from video data.
+> © 2026 Muhammad Bama Yaza. All rights reserved.

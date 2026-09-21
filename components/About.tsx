@@ -2,28 +2,28 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, FolderGit2, Cpu, Workflow } from "lucide-react";
+import { GraduationCap, Award, Wrench, Flame } from "lucide-react";
 
 const stats = [
   {
     icon: GraduationCap,
-    value: "Gunadarma",
-    label: "Alma Mater",
+    value: "ITS",
+    label: "Institut Teknologi Sepuluh Nopember",
   },
   {
-    icon: FolderGit2,
-    value: "3+",
-    label: "Major Academic & Applied Projects",
+    icon: Award,
+    value: "3.41",
+    label: "IPK dari 4.00 (Teknik Mesin Industri)",
   },
   {
-    icon: Cpu,
-    value: "Web + AI",
-    label: "Development Focus",
+    icon: Wrench,
+    value: "2+",
+    label: "Pengalaman Industri (PT Bukit Asam & Smelter)",
   },
   {
-    icon: Workflow,
-    value: "End-to-End",
-    label: "Build · Test · Analyze · Document",
+    icon: Flame,
+    value: "Rekayasa",
+    label: "Konversi Energi & Simulasi Fluida",
   },
 ];
 
@@ -41,30 +41,30 @@ export function About() {
         <div className="flex-1 space-y-6 text-left">
           <div>
             <span className="text-xs font-extrabold uppercase tracking-widest text-primary mb-3 bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20 inline-block shadow-sm">
-              About Me
+              Tentang Saya
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6 text-foreground">
-              Building{" "}
-              <span className="text-gradient-primary">Practical Software</span>{" "}
-              through Development, Experimentation, and Technology
+              Menerapkan{" "}
+              <span className="text-gradient-primary">Rekayasa Mekanikal &amp; Energi</span>{" "}
+              melalui Simulasi Presisi dan Pengalaman Lapangan
             </h2>
           </div>
 
           <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed">
             <p>
-              I am an Informatics graduate from Universitas Gunadarma with
-              experience in software development and applied technology
-              projects. My work spans web-based systems and computer vision. I
-              developed a food-ordering website for Mie Ayam Mas Jo with a
-              loyalty point system and worked on vehicle detection, tracking,
-              and counting using YOLOv8 and Deep SORT.
+              Saya adalah lulusan D4 Teknik Mesin Industri dari Institut
+              Teknologi Sepuluh Nopember (ITS) dengan spesialisasi Rekayasa
+              Konversi Energi (IPK 3.41/4.00). Fokus utama keahlian saya mencakup
+              pemodelan sistem termal-fluida, analisis tegangan pipa, serta riset
+              bahan bakar alternatif terbarukan.
             </p>
             <p>
-              I am comfortable learning new tools, testing different
-              approaches, analyzing results, and documenting the development
-              process. I am especially interested in opportunities where
-              software engineering, intelligent systems, and practical problem
-              solving come together.
+              Pengalaman industri saya mencakup analisis operasional &amp; sistem
+              mekanikal gearbox conveyor di PT Bukit Asam (Sumatera Selatan) serta
+              pengelolaan logistik supply chain proyek instalasi kabel bawah tanah
+              150 kV Smelter Manyar. Saya terbiasa mengoperasikan software simulasi
+              rekayasa seperti ANSYS Fluent, CAEPIPE, EPANET, Autodesk Inventor,
+              dan SolidWorks.
             </p>
           </div>
         </div>

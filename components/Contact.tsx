@@ -8,6 +8,7 @@ export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
+    topic: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
@@ -16,14 +17,14 @@ export function Contact() {
     e.preventDefault();
     if (!formData.name.trim() || !formData.message.trim()) return;
 
-    // Construct WhatsApp message template as specified in COPYWRITING.md:
-    // Halo Zidni, saya {name}. {message}
-    const whatsappMessage = `Halo Zidni, saya ${formData.name}. ${formData.message}${
+    // Template WA Bama Yaza
+    const whatsappMessage = `Halo Bama, saya ${formData.name}. ${
+      formData.topic ? `Topik: ${formData.topic}. ` : ""
+    }${formData.message}${
       formData.contact ? ` (Kontak/Email: ${formData.contact})` : ""
     }`;
 
-    // Target phone number template
-    const waUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(
+    const waUrl = `https://wa.me/6282110681473?text=${encodeURIComponent(
       whatsappMessage
     )}`;
 
@@ -32,7 +33,7 @@ export function Contact() {
 
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: "", contact: "", message: "" });
+      setFormData({ name: "", contact: "", topic: "", message: "" });
     }, 4000);
   };
 
@@ -47,30 +48,28 @@ export function Contact() {
       >
         {/* Ambient Glow Orbs */}
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 blur-[100px] rounded-full pointer-events-none" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-sky-500/15 blur-[100px] rounded-full pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-orange-500/15 blur-[100px] rounded-full pointer-events-none" />
 
         <div className="relative z-10 flex flex-col md:flex-row gap-12 md:gap-20">
           {/* Left Column: Direct Contact Details */}
           <div className="flex-1 space-y-8">
             <div>
               <span className="text-xs font-extrabold uppercase tracking-widest text-primary mb-3 bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20 inline-block shadow-sm">
-                Get In Touch
+                Hubungi Saya
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">
-                Let&apos;s <span className="text-gradient-primary">Connect</span>
+                Mari <span className="text-gradient-primary">Terhubung</span>
               </h2>
               <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-                I am open to opportunities in Software Engineering, Web
-                Development, Computer Vision, and other technology roles where I
-                can continue learning while contributing to real-world projects.
-                Feel free to reach out for collaboration, technical
-                discussions, or professional opportunities.
+                Terbuka untuk peluang karir di bidang Mechanical Engineering, Energy Conversion,
+                Piping &amp; Fluid Systems, Maintenance &amp; Reliability, serta Project Engineering.
+                Siap berdiskusi untuk kolaborasi maupun peluang profesional.
               </p>
             </div>
 
             <div className="space-y-5">
               <a
-                href="mailto:zidnikhaerur@gmail.com"
+                href="mailto:bamayaza@gmail.com"
                 className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-all group"
               >
                 <div className="w-12 h-12 rounded-2xl glass-panel border border-foreground/10 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/40 transition-all shadow-sm">
@@ -79,7 +78,7 @@ export function Contact() {
                 <div>
                   <span className="text-xs text-muted-foreground block">Email</span>
                   <span className="font-semibold text-foreground text-sm sm:text-base">
-                    zidnikhaerur@gmail.com
+                    bamayaza@gmail.com
                   </span>
                 </div>
               </a>
@@ -89,15 +88,15 @@ export function Contact() {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <span className="text-xs text-muted-foreground block">Location</span>
+                  <span className="text-xs text-muted-foreground block">Domisili</span>
                   <span className="font-semibold text-foreground text-sm sm:text-base">
-                    Jakarta Timur, Indonesia
+                    Surabaya, Jawa Timur, Indonesia
                   </span>
                 </div>
               </div>
 
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6282110681473"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-all group"
@@ -106,9 +105,9 @@ export function Contact() {
                   <MessageSquare className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <span className="text-xs text-muted-foreground block">Direct Chat</span>
+                  <span className="text-xs text-muted-foreground block">WhatsApp Chat</span>
                   <span className="font-semibold text-foreground text-sm sm:text-base">
-                    WhatsApp Message
+                    0821-1068-1473
                   </span>
                 </div>
               </a>
@@ -120,63 +119,78 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                  Your Name
+                  Nama Anda
                 </label>
                 <input
                   type="text"
                   required
-                  placeholder="Jane Doe"
+                  placeholder="Contoh: Budi Santoso"
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 rounded-2xl bg-muted/40 border border-border/80 focus:border-primary focus:ring-2 focus:ring-primary/20 text-foreground placeholder:text-muted-foreground outline-none transition-all text-sm font-medium"
+                  className="w-full px-5 py-3.5 rounded-2xl glass-panel border border-foreground/15 bg-background/50 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
                 />
               </div>
 
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                  Your Email / WhatsApp
+                  Email / No. Telepon
                 </label>
                 <input
                   type="text"
-                  placeholder="name@example.com / 08..."
+                  placeholder="email@example.com / 0812xxxx"
                   value={formData.contact}
                   onChange={(e) =>
                     setFormData({ ...formData, contact: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 rounded-2xl bg-muted/40 border border-border/80 focus:border-primary focus:ring-2 focus:ring-primary/20 text-foreground placeholder:text-muted-foreground outline-none transition-all text-sm font-medium"
+                  className="w-full px-5 py-3.5 rounded-2xl glass-panel border border-foreground/15 bg-background/50 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
                 />
               </div>
 
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                  Message
+                  Topik / Subjek
+                </label>
+                <input
+                  type="text"
+                  placeholder="Peluang Karir / Diskusi Rekayasa / Proyek"
+                  value={formData.topic}
+                  onChange={(e) =>
+                    setFormData({ ...formData, topic: e.target.value })
+                  }
+                  className="w-full px-5 py-3.5 rounded-2xl glass-panel border border-foreground/15 bg-background/50 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
+                  Pesan
                 </label>
                 <textarea
                   required
                   rows={4}
-                  placeholder="Tell me about your project or opportunity..."
+                  placeholder="Tuliskan pesan atau detail peluang yang ingin didiskusikan..."
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="w-full px-5 py-3.5 rounded-2xl bg-muted/40 border border-border/80 focus:border-primary focus:ring-2 focus:ring-primary/20 text-foreground placeholder:text-muted-foreground outline-none transition-all text-sm font-medium resize-none"
+                  className="w-full px-5 py-3.5 rounded-2xl glass-panel border border-foreground/15 bg-background/50 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full h-12 sm:h-14 rounded-full bg-primary text-primary-foreground font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_25px_rgba(139,92,246,0.35)] hover:shadow-[0_0_35px_rgba(139,92,246,0.55)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                className="w-full py-4 rounded-2xl bg-primary text-primary-foreground font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] cursor-pointer"
               >
                 {submitted ? (
                   <>
-                    <CheckCircle2 className="w-5 h-5 text-emerald-300" />
-                    <span>Opening WhatsApp...</span>
+                    <CheckCircle2 className="w-5 h-5" />
+                    <span>Membuka WhatsApp...</span>
                   </>
                 ) : (
                   <>
-                    <span>Send Message</span>
+                    <span>Kirim Pesan ke WhatsApp</span>
                     <Send className="w-4 h-4" />
                   </>
                 )}

@@ -302,17 +302,16 @@ export function LanyardCard({
 
           <div className="flex flex-col h-full bg-card w-full">
             {/* Upper Card Header with Avatar */}
-            <div className="relative px-5 pt-7 pb-6 flex flex-col items-center bg-gradient-to-br from-purple-700 via-primary to-indigo-950 text-white overflow-hidden">
+            <div className="relative px-5 pt-7 pb-6 flex flex-col items-center bg-gradient-to-br from-amber-700 via-primary to-orange-950 text-white overflow-hidden">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:12px_12px] pointer-events-none" />
-              <div className="mt-1 relative w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-primary to-purple-400 backdrop-blur-md shadow-2xl border border-white/50 overflow-hidden group">
+              <div className="mt-1 relative w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-amber-400 via-primary to-orange-400 backdrop-blur-md shadow-2xl border border-white/50 overflow-hidden group">
                 <div className="w-full h-full rounded-full overflow-hidden bg-zinc-900 flex items-center justify-center">
                   <img
-                    alt="Zidni Khaerur Rizqia"
+                    alt="Muhammad Bama Yaza"
                     className="w-full h-full object-cover filter contrast-105"
                     loading="eager"
                     src="/profile.jpg"
                     onError={(e) => {
-                      // Fallback avatar if local image not found yet
                       (e.target as HTMLImageElement).src =
                         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80";
                     }}
@@ -325,10 +324,10 @@ export function LanyardCard({
             <div className="p-5 flex flex-col items-center text-center bg-card text-card-foreground flex-1 gap-3">
               <div>
                 <h3 className="text-xl font-extrabold tracking-tight text-foreground">
-                  Zidni Khaerur Rizqia
+                  Muhammad Bama Yaza
                 </h3>
                 <div className="inline-flex items-center gap-1 mt-1 px-3 py-0.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold">
-                  <span>Informatics Graduate & Software Developer</span>
+                  <span>Mechanical &amp; Energy Conversion Engineer</span>
                 </div>
               </div>
 
@@ -339,7 +338,7 @@ export function LanyardCard({
                 </span>
                 <div className="flex flex-col gap-0">
                   <span className="px-2.5 py-1 rounded-lg bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wide text-center">
-                    WEB DEVELOPMENT · COMPUTER VISION · SOFTWARE PROJECTS
+                    THERMAL-FLUID · PIPING &amp; CFD · ENERGY CONVERSION
                   </span>
                 </div>
               </div>
@@ -351,7 +350,7 @@ export function LanyardCard({
                     Location
                   </span>
                   <span className="font-bold text-foreground text-xs whitespace-nowrap">
-                    Jakarta Timur
+                    Surabaya
                   </span>
                 </div>
                 <div className="text-center px-1">
@@ -359,7 +358,7 @@ export function LanyardCard({
                     Experience
                   </span>
                   <span className="font-bold text-foreground text-xs whitespace-nowrap">
-                    Fresh Grad
+                    2+ Industri
                   </span>
                 </div>
                 <div className="text-center px-1">
@@ -385,7 +384,7 @@ export function LanyardCard({
                 </div>
                 <div className="flex items-center justify-center w-full px-1 text-[10px]">
                   <span className="font-mono font-bold tracking-widest text-primary">
-                    ZKR-2026-DEV
+                    MBY-2026-ENG
                   </span>
                 </div>
               </div>

@@ -18,65 +18,71 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title:
-      "Aplikasi Pemesanan Makanan Website & Sistem Loyalitas Mie Ayam Mas Jo",
-    category: "Scientific Writing Project · Web Development",
+    title: "Produksi Biodiesel Jelantah & Analisis Emisi Mesin Diesel",
+    category: "Tugas Akhir · Rekayasa Konversi Energi",
     description:
-      "Developed a web-based food ordering application for Mie Ayam Mas Jo as a scientific writing project. The system was designed to make the ordering process more accessible while introducing a loyalty point mechanism that rewards repeat customers. The project covered requirement analysis, interface and feature development, system implementation, testing, and technical documentation as part of the academic development process.",
+      "Memformulasi biodiesel dari minyak jelantah lewat proses transesterifikasi dan pemurnian bertingkat dengan aquades. Menguji variasi campuran bahan bakar (B40, B70, B100) dibandingkan Pertamina Dex pada dyno test untuk menganalisis konsumsi BBM spesifik, efisiensi termal mesin, daya, torsi, dan tingkat opasitas emisi gas buang.",
     highlights: [
-      "Web-based food ordering workflow",
-      "Customer loyalty point system",
-      "Practical implementation for a real food business case",
-      "System testing and academic documentation",
-      "Focus on usability and an accessible customer experience",
+      "Formulasi reaksi transesterifikasi minyak jelantah & pemurnian",
+      "Karakterisasi campuran bahan bakar alternatif: B40, B70, dan B100 murni",
+      "Pengujian konsumsi bahan bakar pada mesin diesel uji laboratorium",
+      "Pengukuran kurva torsi, daya mesin, dan performa lewat dyno test",
+      "Analisis perbandingan emisi gas buang dan opasitas vs Pertamina Dex",
     ],
     tags: [
-      "Web Development",
-      "Food Ordering System",
-      "Loyalty Points",
-      "Academic Project",
+      "Biodiesel",
+      "Transesterifikasi",
+      "Mesin Diesel",
+      "Dyno Test",
+      "Tugas Akhir ITS",
     ],
-    image: "/project-food.jpg",
+    image: "/project-biodiesel.jpg",
     gridClass: "md:col-span-12 lg:col-span-7 h-[460px]",
   },
   {
     id: 2,
-    title: "Automated Vehicle Detection, Tracking & Counting System",
-    category: "Computer Vision & Deep Learning",
+    title: "Desain & Simulasi Jaringan Distribusi Air Bersih Multi-Lantai",
+    category: "Pemodelan Sistem Perpipaan · EPANET",
     description:
-      "Developed and tested a computer vision pipeline for detecting, tracking, and counting vehicles from video footage. YOLOv8 was used for object detection, while Deep SORT maintained object identities across frames. Directional line-crossing logic was then applied to count vehicle movement while reducing duplicate counts.",
+      "Merancang jaringan distribusi air bersih kampus secara komprehensif. Mengintegrasikan pemetaan rute spasial Google Earth, pembuatan gambar kerja isometrik perpipaan, dan simulasi hidrolik EPANET untuk memvalidasi debit, head loss, dan tekanan dari reservoir utama ke reservoir gedung hingga sistem pompa per lantai.",
     highlights: [
-      "Vehicle detection using YOLOv8",
-      "Multi-object tracking with Deep SORT",
-      "OpenCV-based video processing",
-      "Directional line-crossing and counting logic",
-      "Model testing using recorded traffic footage",
+      "Pemodelan hidrolik jaringan pipa menggunakan EPANET",
+      "Sistem distribusi bertingkat dengan reservoir antara dan pompa booster",
+      "Analisis kehilangan energi (head loss) dan pressure drop fitting",
+      "Pemetaan jalur pipa di atas koordinat nyata Google Earth",
+      "Penyusunan gambar teknik isometrik instalasi pipa",
     ],
     tags: [
-      "Python",
-      "YOLOv8",
-      "Deep SORT",
-      "OpenCV",
-      "Computer Vision",
+      "EPANET",
+      "Simulasi Hidrolik",
+      "Piping Network",
+      "Google Earth",
+      "CAD Isometrik",
     ],
-    image: "/project-cv.jpg",
+    image: "/project-epanet.png",
     gridClass: "md:col-span-12 lg:col-span-5 h-[460px]",
   },
   {
     id: 3,
-    title: "Modern Frontend & Containerization Practice",
-    category: "Frontend Engineering & DevOps",
+    title: "Pemeliharaan Gearbox Conveyor Tambang & Perancangan Alat Bantu",
+    category: "Magang Industri · PT Bukit Asam Tbk",
     description:
-      "Explored modern frontend development using React and TypeScript while practicing structured source-control workflows and container-based development concepts. This work strengthened my understanding of reusable UI components, type-safe development, Git workflows, and deployment-oriented engineering practices.",
+      "Melakukan observasi operasional dan analisis sistem mekanikal gearbox conveyor batubara serta analisis heat exchanger pendingin pelumas. Merancang alat bantu mekanikal drum lifter untuk efisiensi pengisian pelumas dan prototipe mobile crane bengkel mesin bubut.",
     highlights: [
-      "Modular, type-safe UI component architecture",
-      "Strict Git branching and version-control workflows",
-      "Docker containerization for reproducible environments",
-      "Basic Kubernetes orchestration and service configurations",
-      "Continuous integration concepts and automated linting",
+      "Inspeksi & evaluasi kerusakan sistem gearbox conveyor industri batubara",
+      "Analisis perpindahan panas sistem pendingin oli heat exchanger",
+      "Desain 3D alat bantu pengisian oli Drum Lifter di Autodesk Inventor",
+      "Perancangan prototipe Mobile Crane untuk area kerja mesin bubut",
+      "Praktik manajemen perawatan preventif dan keselamatan kerja tambang",
     ],
-    tags: ["React", "TypeScript", "Git", "Docker", "Kubernetes"],
-    image: "/project-frontend.jpg",
+    tags: [
+      "PT Bukit Asam",
+      "Autodesk Inventor",
+      "Gearbox Conveyor",
+      "Heat Exchanger",
+      "Drum Lifter",
+    ],
+    image: "/project-bukitasam.jpg",
     gridClass: "md:col-span-12 h-[380px]",
   },
 ];
@@ -95,14 +101,13 @@ export function Projects() {
         className="mb-12 md:mb-16"
       >
         <span className="text-xs font-extrabold uppercase tracking-widest text-primary mb-3 bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20 inline-block shadow-sm">
-          Portfolio
+          Portofolio
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-center md:text-left text-foreground">
-          Selected <span className="text-gradient-primary">Works</span>
+          Proyek &amp; <span className="text-gradient-primary">Riset Rekayasa</span>
         </h2>
         <p className="text-muted-foreground text-center md:text-left max-w-2xl text-base sm:text-lg">
-          A showcase of practical web systems, computer vision pipelines, and
-          applied software engineering projects.
+          Dokumentasi riset konversi energi, simulasi hidrolik sistem perpipaan, dan perancangan mekanikal industri.
         </p>
       </motion.div>
 
@@ -118,54 +123,38 @@ export function Projects() {
             transition={{ delay: idx * 0.1, duration: 0.6 }}
             viewport={{ once: true, amount: 0.1 }}
           >
-            {/* Background Image / Visual Mockup */}
-            <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-950 to-black overflow-hidden">
-              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#8b5cf6_1px,transparent_1px)] [background-size:24px_24px]" />
+            {/* Background Image with Zoom on Hover */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-80 transform-gpu"
-                onError={(e) => {
-                  // If image file is not on disk yet, hide image so stylized gradient is shown
-                  (e.target as HTMLElement).style.opacity = "0.2";
-                }}
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-[0.75] contrast-[1.05]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
             </div>
 
-            {/* Content Overlay */}
-            <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end pointer-events-none">
-              <div className="flex items-end justify-between gap-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300 transform-gpu">
-                <div className="z-10 max-w-xl">
-                  <span className="text-xs font-bold uppercase tracking-widest text-primary mb-2 inline-block">
-                    {project.category}
+            {/* Content overlay */}
+            <div className="relative z-10 p-6 sm:p-8 flex flex-col justify-end h-full">
+              <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-1.5">
+                {project.category}
+              </span>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 leading-tight">
+                {project.title}
+              </h3>
+              <p className="text-zinc-300 text-xs sm:text-sm line-clamp-2 max-w-xl mb-4 leading-relaxed">
+                {project.description}
+              </p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2">
+                {project.tags.slice(0, 4).map((tag, tIdx) => (
+                  <span
+                    key={tIdx}
+                    className="px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-md text-[11px] font-medium text-white/90 border border-white/15"
+                  >
+                    {tag}
                   </span>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-2 tracking-tight drop-shadow-md">
-                    {project.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-white/80 line-clamp-2 mb-4 font-normal">
-                    {project.description}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tIdx) => (
-                      <span
-                        key={tIdx}
-                        className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-semibold border border-white/15"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* View Details Icon Button */}
-                <div className="w-12 h-12 rounded-full bg-primary/80 backdrop-blur-md border border-white/30 text-white flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 group-hover:bg-primary transition-all duration-300">
-                  <ExternalLink className="w-5 h-5" />
-                </div>
+                ))}
               </div>
             </div>
           </motion.div>
@@ -175,60 +164,64 @@ export function Projects() {
       {/* Project Detail Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedProject(null)}
+              className="absolute inset-0 bg-black/70 backdrop-blur-md"
+            />
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ duration: 0.3 }}
-              className="glass-panel w-full max-w-3xl rounded-[2.5rem] border border-foreground/20 p-6 sm:p-10 shadow-2xl overflow-hidden relative max-h-[90vh] overflow-y-auto"
+              className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto glass-panel rounded-[2.5rem] border border-border p-6 sm:p-10 shadow-2xl z-10 bg-card text-card-foreground"
             >
-              {/* Close Button */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-6 right-6 p-2 rounded-full glass-panel hover:bg-primary/20 text-foreground transition-colors cursor-pointer"
-                aria-label="Close modal"
+                className="absolute top-6 right-6 p-2 rounded-full bg-muted/60 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
 
-              <span className="text-xs font-bold uppercase tracking-widest text-primary mb-2 inline-block">
+              <div className="w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-6">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-1">
                 {selectedProject.category}
               </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">
                 {selectedProject.title}
               </h3>
-
-              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
                 {selectedProject.description}
               </p>
 
-              {/* Key Highlights */}
               <div className="mb-6">
                 <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-3 flex items-center gap-2">
-                  <Layers className="w-4 h-4 text-primary" /> Key Highlights &amp; Features
+                  <Layers className="w-4 h-4 text-primary" /> Highlight Rekayasa
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                  {selectedProject.highlights.map((highlight, hIdx) => (
-                    <div
-                      key={hIdx}
-                      className="flex items-start gap-2.5 p-3 rounded-xl bg-muted/40 border border-border/60"
-                    >
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span className="text-xs sm:text-sm font-medium text-foreground">
-                        {highlight}
-                      </span>
+                <div className="space-y-2">
+                  {selectedProject.highlights.map((item, hIdx) => (
+                    <div key={hIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span>{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-border/60">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
                 {selectedProject.tags.map((tag, tIdx) => (
                   <span
                     key={tIdx}
-                    className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/25"
+                    className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold"
                   >
                     {tag}
                   </span>

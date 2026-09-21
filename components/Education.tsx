@@ -6,12 +6,12 @@ import { GraduationCap, Award, Calendar, BookOpen, CheckCircle2, MapPin } from "
 import { MagicCard } from "./MagicCard";
 
 const focusAreas = [
-  "Software and web application development",
-  "Algorithms and programming",
-  "Computer vision and image processing",
-  "Artificial intelligence and applied machine learning",
-  "Database and information-system fundamentals",
-  "Technical research, testing, and documentation",
+  "Termodinamika Teknik & Perpindahan Panas",
+  "Mekanika Fluida & Sistem Perpipaan",
+  "Motor Pembakaran Dalam & Turbocharger",
+  "Energi Baru & Terbarukan (Biofuel, Hybrid)",
+  "Perancangan Mekanikal & Elemen Mesin",
+  "Simulasi CFD (ANSYS Fluent) & CAEPIPE",
 ];
 
 export function Education() {
@@ -30,11 +30,11 @@ export function Education() {
             <GraduationCap className="w-6 h-6" />
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
-            Academic <span className="text-gradient-primary">Background</span>
+            Latar Belakang <span className="text-gradient-primary">Akademik</span>
           </h2>
         </div>
         <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
-          Academic foundation in Informatics, software development, and applied computing
+          Fondasi akademik dalam Teknik Mesin Industri dengan spesialisasi Rekayasa Konversi Energi
         </p>
       </motion.div>
 
@@ -48,9 +48,9 @@ export function Education() {
         <MagicCard
           className="p-8 md:p-10 rounded-[2.25rem] border border-border/80 bg-card/80 shadow-xl"
           gradientSize={400}
-          gradientColor="rgba(139, 92, 246, 0.12)"
-          gradientFrom="#8b5cf6"
-          gradientTo="#38bdf8"
+          gradientColor="rgba(245, 158, 11, 0.12)"
+          gradientFrom="#f59e0b"
+          gradientTo="#f97316"
         >
           <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 lg:gap-12">
             {/* Left Column: Degree & Institution Meta */}
@@ -59,32 +59,32 @@ export function Education() {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/25 text-primary flex items-center justify-center shadow-sm">
                   <GraduationCap className="w-7 h-7 text-primary" />
                 </div>
-                <span className="px-3.5 py-1.5 rounded-full border text-xs font-extrabold flex items-center gap-1.5 shadow-sm text-emerald-400 bg-emerald-500/10 border-emerald-500/30">
+                <span className="px-3.5 py-1.5 rounded-full border text-xs font-extrabold flex items-center gap-1.5 shadow-sm text-amber-400 bg-amber-500/10 border-amber-500/30">
                   <Award className="w-3.5 h-3.5" />
-                  IPK 3.69/4.00
+                  IPK 3.41 / 4.00
                 </span>
               </div>
 
               <div>
                 <h3 className="text-2xl md:text-3xl font-extrabold text-foreground tracking-tight mb-2">
-                  Sarjana Komputer (S.Kom.)
+                  Sarjana Terapan Teknik (S.Tr.T.)
                 </h3>
                 <p className="text-primary font-bold text-base mb-4">
-                  Informatics Major
+                  D4 Teknik Mesin Industri — Rekayasa Konversi Energi
                 </p>
 
                 <div className="flex flex-col gap-2.5 text-xs sm:text-sm font-semibold text-muted-foreground">
                   <span className="flex items-center gap-2 text-foreground font-bold">
                     <MapPin className="w-4 h-4 text-primary" />
-                    Universitas Gunadarma
+                    Institut Teknologi Sepuluh Nopember (ITS)
                   </span>
                   <span className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-primary" />
-                    Period: 2022 – 2026
+                    Kelulusan: 2026
                   </span>
                   <span className="flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-primary" />
-                    Focus: Web Systems &amp; Computer Vision
+                    Fokus: Termal-Fluida, Sistem Pipa &amp; Biofuel
                   </span>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export function Education() {
             {/* Right Column: Focus Areas & Key Competencies */}
             <div className="flex flex-col justify-center">
               <h4 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">
-                Key Academic Competencies &amp; Focus Areas
+                Kompetensi Inti &amp; Bidang Fokus Rekayasa
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {focusAreas.map((area, idx) => (

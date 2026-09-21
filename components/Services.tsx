@@ -2,27 +2,27 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { CodeXml, ScanEye, FileCheck2 } from "lucide-react";
+import { Waves, Cpu, Fuel } from "lucide-react";
 import { MagicCard } from "./MagicCard";
 
 const services = [
   {
-    icon: CodeXml,
-    title: "Web Application Development",
+    icon: Waves,
+    title: "Perancangan Sistem Fluida & Perpipaan",
     description:
-      "Building responsive web applications and translating real business needs into practical digital features, including ordering workflows and customer loyalty systems.",
+      "Merancang jaringan pipa distribusi, kalkulasi hidrolik, dan pemodelan jalur pipa menggunakan EPANET serta analisis tegangan pipa (stress analysis) dengan CAEPIPE.",
   },
   {
-    icon: ScanEye,
-    title: "Computer Vision & Tracking",
+    icon: Cpu,
+    title: "Simulasi Komputasi Teknik (CFD & CAD)",
     description:
-      "Developing object detection, multi-object tracking, and vehicle-counting experiments using YOLOv8, Deep SORT, OpenCV, and Python.",
+      "Melakukan simulasi dinamika fluida komputasi dengan ANSYS Fluent, pemodelan mesin 3D presisi dengan Autodesk Inventor / SolidWorks, dan gambar teknik isometrik / 2D CAD.",
   },
   {
-    icon: FileCheck2,
-    title: "Testing & Technical Documentation",
+    icon: Fuel,
+    title: "Riset Konversi Energi & Bahan Bakar",
     description:
-      "Conducting system testing, evaluating results, documenting methodologies, and communicating technical findings in academic and project reports.",
+      "Formulasi bahan bakar terbarukan (transesterifikasi biodiesel B40-B100), uji performa mesin diesel pada dyno test, analisis konsumsi BBM, serta konversi paralel hybrid.",
   },
 ];
 
@@ -38,14 +38,13 @@ export function Services() {
         className="mb-16 text-center"
       >
         <span className="text-xs font-extrabold uppercase tracking-widest text-primary mb-3 bg-primary/10 px-4 py-1.5 rounded-full border border-primary/20 inline-block shadow-sm">
-          Services
+          Keahlian &amp; Layanan
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gradient-primary">
-          What I Do
+          Bidang Rekayasa
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-          Developing practical software, intelligent vision pipelines, and
-          user-focused digital solutions
+          Solusi rekayasa mekanikal, simulasi fluida tingkat lanjut, dan optimasi sistem konversi energi terbarukan
         </p>
       </motion.div>
 
@@ -65,9 +64,9 @@ export function Services() {
               <MagicCard
                 className="h-full p-8 rounded-[2rem] border border-border/80 bg-card/80 shadow-lg"
                 gradientSize={280}
-                gradientColor="rgba(139, 92, 246, 0.12)"
-                gradientFrom="#8b5cf6"
-                gradientTo="#38bdf8"
+                gradientColor="rgba(245, 158, 11, 0.12)"
+                gradientFrom="#f59e0b"
+                gradientTo="#f97316"
               >
                 <div className="flex flex-col h-full justify-between gap-6">
                   <div>

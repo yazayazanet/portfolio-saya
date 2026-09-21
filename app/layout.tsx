@@ -3,23 +3,24 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Zidni Khaerur Rizqia | Informatics Graduate & Software Developer",
+  title: "Muhammad Bama Yaza | Mechanical & Energy Conversion Engineer",
   description:
-    "Portfolio of Zidni Khaerur Rizqia - Informatics graduate from Universitas Gunadarma with experience in Web Application Development, Computer Vision (YOLOv8, Deep SORT), and software engineering.",
+    "Portfolio of Muhammad Bama Yaza - D4 Industrial Mechanical Engineering graduate from ITS Surabaya with focus on Energy Conversion, CFD Simulation (ANSYS Fluent), Piping Analysis (CAEPIPE, EPANET), and Industrial Operations.",
   keywords: [
-    "Zidni Khaerur Rizqia",
+    "Muhammad Bama Yaza",
     "Portfolio",
-    "Informatics",
-    "Gunadarma",
-    "Software Developer",
-    "Computer Vision",
-    "YOLOv8",
-    "Deep SORT",
-    "React",
-    "Next.js",
-    "TypeScript",
+    "Teknik Mesin Industri",
+    "ITS Surabaya",
+    "Energy Conversion",
+    "Mechanical Engineer",
+    "Biodiesel",
+    "ANSYS Fluent",
+    "CAEPIPE",
+    "EPANET",
+    "SolidWorks",
+    "Autodesk Inventor",
   ],
-  authors: [{ name: "Zidni Khaerur Rizqia" }],
+  authors: [{ name: "Muhammad Bama Yaza" }],
 };
 
 export default function RootLayout({
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="id" className="dark" suppressHydrationWarning>
       <body className="antialiased min-h-screen bg-background text-foreground selection:bg-primary/30 selection:text-primary">
         <ThemeProvider>{children}</ThemeProvider>
       </body>

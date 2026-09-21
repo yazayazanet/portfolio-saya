@@ -11,10 +11,11 @@ import {
 import {
   Home,
   User,
-  FolderOpen,
+  Briefcase,
+  FolderGit2,
   GraduationCap,
-  Cpu,
-  Send,
+  Wrench,
+  Mail,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -26,11 +27,12 @@ interface DockItemData {
 
 const dockItems: DockItemData[] = [
   { icon: Home, label: "Home", href: "#home" },
-  { icon: User, label: "About", href: "#about" },
-  { icon: FolderOpen, label: "Projects", href: "#projects" },
-  { icon: GraduationCap, label: "Education", href: "#education" },
-  { icon: Cpu, label: "Skills", href: "#skills" },
-  { icon: Send, label: "Contact", href: "#contact" },
+  { icon: User, label: "Tentang", href: "#about" },
+  { icon: Briefcase, label: "Pengalaman", href: "#career" },
+  { icon: FolderGit2, label: "Proyek", href: "#projects" },
+  { icon: GraduationCap, label: "Pendidikan", href: "#education" },
+  { icon: Wrench, label: "Keahlian", href: "#skills" },
+  { icon: Mail, label: "Kontak", href: "#contact" },
 ];
 
 function DockIcon({
@@ -106,43 +108,28 @@ function DockIcon({
 
 export function DockBar() {
   const mouseX = useMotionValue(Infinity);
-  const [visible, setVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setVisible(window.scrollY > 120);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    setMounted(true);
   }, []);
 
+  if (!mounted) return null;
+
   return (
-    <AnimatePresence>
-      {visible && (
-        <motion.aside
-          initial={{ opacity: 0, y: 50, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 50, scale: 0.9 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          aria-label="Bottom Navigation"
-          className="fixed bottom-4 inset-x-0 mx-auto w-fit z-40 flex items-center justify-center pointer-events-auto select-none"
-        >
-          <div
-            onMouseMove={(e) => mouseX.set(e.clientX)}
-            onMouseLeave={() => mouseX.set(Infinity)}
-            className="p-[3px] rounded-[24px] sm:rounded-[28px] border border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-100/80 dark:bg-zinc-900/80 shadow-2xl backdrop-blur-xl"
-            role="toolbar"
-            aria-label="Application dock"
-          >
-            <div className="flex items-end w-fit rounded-[20px] sm:rounded-[24px] px-3.5 py-2 transition-all duration-300 gap-3 border border-zinc-200/90 dark:border-zinc-800/90 bg-white/90 dark:bg-black/90 shadow-inner">
-              {dockItems.map((item, idx) => (
-                <DockIcon key={idx} item={item} mouseX={mouseX} />
-              ))}
-            </div>
-          </div>
-        </motion.aside>
-      )}
-    </AnimatePresence>
+    <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40">
+      <motion.div
+        onMouseMove={(e) => mouseX.set(e.clientX)}
+        onMouseLeave={() => mouseX.set(Infinity)}
+        initial={{ y: 80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
+        className="flex items-center gap-3 px-4 py-3 rounded-[2rem] glass-panel border border-foreground/15 bg-background/80 dark:bg-zinc-900/80 shadow-2xl backdrop-blur-2xl"
+      >
+        {dockItems.map((item, idx) => (
+          <DockIcon key={idx} item={item} mouseX={mouseX} />
+        ))}
+      </motion.div>
+    </div>
   );
 }

@@ -5,83 +5,85 @@ import { motion } from "framer-motion";
 import {
   Cpu,
   Server,
-  Brain,
+  Activity,
   Sparkles,
-  Terminal,
+  Layers,
+  Wrench,
   Search,
-  FileText,
-  Bug,
-  BookOpen,
+  FileCheck2,
+  Settings,
+  Flame,
+  Truck,
   Users,
 } from "lucide-react";
 
 interface SkillBar {
   name: string;
   level: number;
-  icon: string;
+  category: string;
 }
 
 const arsenal: SkillBar[] = [
   {
-    name: "Python (OpenCV, AI Pipelines)",
-    level: 90,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    name: "Autodesk Inventor & SolidWorks",
+    level: 92,
+    category: "3D CAD Modeling & Assembly",
   },
   {
-    name: "JavaScript & TypeScript",
+    name: "ANSYS Fluent (CFD)",
+    level: 86,
+    category: "Fluid Flow & Heat Transfer",
+  },
+  {
+    name: "CAEPIPE (Stress Analysis)",
+    level: 84,
+    category: "Piping Stress & Sustained Loads",
+  },
+  {
+    name: "EPANET Hydraulic Network",
     level: 88,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    category: "Water Distribution Modeling",
   },
   {
-    name: "React.js & Tailwind CSS",
+    name: "AutoCAD 2D & Isometric Drawing",
+    level: 88,
+    category: "Engineering Drawings & P&ID",
+  },
+  {
+    name: "Transesterifikasi & Biodiesel Test",
     level: 90,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-  },
-  {
-    name: "Computer Vision (YOLOv8, Deep SORT)",
-    level: 85,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
-  },
-  {
-    name: "Workflow (Git, GitHub, Docker)",
-    level: 82,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-  },
-  {
-    name: "Linux & Web Hosting / cPanel",
-    level: 78,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    category: "Biofuel Formulation & Dyno Testing",
   },
 ];
 
 const traits = [
   {
-    name: "Analytical & Algorithmic Problem Solving",
-    icon: Brain,
-    color: "text-purple-400 border-purple-500/30 bg-purple-500/10",
-  },
-  {
-    name: "Research-Oriented Experimentation",
-    icon: Search,
-    color: "text-sky-400 border-sky-500/30 bg-sky-500/10",
-  },
-  {
-    name: "End-to-End Project Documentation",
-    icon: FileText,
-    color: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
-  },
-  {
-    name: "Iterative Debugging & System Improvement",
-    icon: Bug,
+    name: "Analisis Berbasis Data Uji & Simulasi",
+    icon: Activity,
     color: "text-amber-400 border-amber-500/30 bg-amber-500/10",
   },
   {
-    name: "Independent Learning & Adaptation",
-    icon: BookOpen,
+    name: "Pemodelan Termal & Sistem Fluida",
+    icon: Flame,
+    color: "text-orange-400 border-orange-500/30 bg-orange-500/10",
+  },
+  {
+    name: "Perancangan Mekanikal & Elemen Mesin",
+    icon: Wrench,
+    color: "text-yellow-400 border-yellow-500/30 bg-yellow-500/10",
+  },
+  {
+    name: "Dokumentasi & Standar Gambar Isometrik",
+    icon: FileCheck2,
+    color: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
+  },
+  {
+    name: "Manajemen Supply Chain & Logistik Proyek",
+    icon: Truck,
     color: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
   },
   {
-    name: "Academic & Technical Collaboration",
+    name: "Kolaborasi Lintas Divisi & Lapangan",
     icon: Users,
     color: "text-rose-400 border-rose-500/30 bg-rose-500/10",
   },
@@ -103,11 +105,11 @@ export function Skills() {
             <Cpu className="w-5 h-5" />
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
-            Expertise &amp; <span className="text-gradient-primary">Skills</span>
+            Keahlian &amp; <span className="text-gradient-primary">Kompetensi</span>
           </h2>
         </div>
         <p className="text-muted-foreground text-base sm:text-lg max-w-2xl">
-          Core technical competencies, engineering workflows, and analytical traits
+          Penguasaan software simulasi teknik standar industri, perancangan mekanikal, dan metodologi kerja lapangan
         </p>
       </motion.div>
 
@@ -117,104 +119,77 @@ export function Skills() {
         <div className="glass-panel p-6 sm:p-8 rounded-[2rem] border border-foreground/15 shadow-xl relative overflow-hidden">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/60">
             <h4 className="text-xl font-bold text-foreground flex items-center gap-2.5">
-              <Server className="w-5 h-5 text-primary" /> Technical Arsenal
+              <Layers className="w-5 h-5 text-primary" /> Software Teknik &amp; Metodologi
             </h4>
-            <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted/60 px-3 py-1 rounded-full border border-border/50">
+            <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
               Proficiency
             </span>
           </div>
 
           <div className="space-y-6">
             {arsenal.map((skill, idx) => (
-              <div key={idx} className="space-y-2.5">
+              <div key={idx} className="space-y-2">
                 <div className="flex justify-between items-center text-sm font-semibold">
-                  <span className="text-foreground flex items-center gap-2.5">
-                    <div className="p-1.5 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center w-7 h-7">
-                      <img
-                        src={skill.icon}
-                        alt={skill.name}
-                        className="w-4 h-4 object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                    {skill.name}
-                  </span>
-                  <span className="font-mono font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full text-xs border border-primary/20">
-                    {skill.level}%
-                  </span>
+                  <div className="flex flex-col">
+                    <span className="text-foreground text-sm font-bold">{skill.name}</span>
+                    <span className="text-xs text-muted-foreground font-normal">{skill.category}</span>
+                  </div>
+                  <span className="text-primary font-mono text-xs">{skill.level}%</span>
                 </div>
-
-                {/* Animated Progress Track */}
-                <div className="h-2.5 w-full bg-muted/60 rounded-full overflow-hidden border border-border/40 p-[1px]">
+                <div className="h-2.5 w-full bg-muted/40 rounded-full overflow-hidden border border-border/30">
                   <motion.div
-                    className="h-full bg-gradient-to-r from-purple-600 via-primary to-sky-400 rounded-full relative shadow-[0_0_12px_rgba(139,92,246,0.5)]"
+                    className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 + idx * 0.1 }}
+                    transition={{ duration: 1, delay: idx * 0.1, ease: "easeOut" }}
                     viewport={{ once: true }}
-                  >
-                    <div className="absolute right-0 top-0 bottom-0 w-2 bg-white rounded-full shadow-[0_0_8px_#fff]" />
-                  </motion.div>
+                  />
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Right Column: Professional Traits & Narrative Card */}
-        <div className="glass-panel p-6 sm:p-8 rounded-[2rem] border border-foreground/15 shadow-xl flex flex-col justify-between">
+        {/* Right Column: Professional Traits */}
+        <div className="glass-panel p-6 sm:p-8 rounded-[2rem] border border-foreground/15 shadow-xl relative overflow-hidden flex flex-col justify-between">
           <div>
             <div className="flex items-center justify-between mb-8 pb-4 border-b border-border/60">
               <h4 className="text-xl font-bold text-foreground flex items-center gap-2.5">
-                <Brain className="w-5 h-5 text-primary" /> Professional Traits
+                <Sparkles className="w-5 h-5 text-primary" /> Karakter Profesional Rekayasa
               </h4>
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted/60 px-3 py-1 rounded-full border border-border/50">
-                Core Competencies
+              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                Engineering Mindset
               </span>
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {traits.map((trait, idx) => {
                 const Icon = trait.icon;
                 return (
                   <motion.div
                     key={idx}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 200,
-                      damping: 15,
-                      delay: idx * 0.08,
-                    }}
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: idx * 0.08 }}
                     viewport={{ once: true }}
-                    className={`px-4 py-2.5 rounded-2xl border text-xs sm:text-sm font-semibold flex items-center gap-2.5 shadow-sm hover:scale-105 transition-transform cursor-default ${trait.color}`}
+                    className="p-4 rounded-2xl border border-border/40 bg-card/60 hover:border-primary/40 transition-all flex items-start gap-3.5 group"
                   >
-                    <Icon className="w-4 h-4 shrink-0" />
-                    <span>{trait.name}</span>
+                    <div className={`p-2 rounded-xl border shrink-0 ${trait.color} group-hover:scale-110 transition-transform`}>
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <span className="text-xs sm:text-sm font-semibold text-foreground leading-snug">
+                      {trait.name}
+                    </span>
                   </motion.div>
                 );
               })}
             </div>
           </div>
 
-          {/* Bottom Summary Card */}
           <div className="mt-8 pt-6 border-t border-border/60">
-            <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-primary/10 via-purple-500/5 to-transparent border border-primary/20 flex items-start gap-3.5 shadow-sm">
-              <div className="p-2.5 rounded-xl bg-primary/20 text-primary shrink-0 mt-0.5">
-                <Sparkles className="w-5 h-5" />
-              </div>
-              <div>
-                <strong className="text-foreground font-bold text-sm sm:text-base block mb-1">
-                  Software Development + Applied Technology
-                </strong>
-                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Experience building web applications and experimenting with
-                  computer vision systems through structured testing,
-                  iteration, and technical documentation.
-                </p>
-              </div>
-            </div>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed italic">
+              &quot;Menggabungkan ketelitian simulasi komputasi dengan kedisiplinan eksekusi di lapangan untuk menciptakan sistem energi dan mekanikal yang andal.&quot;
+            </p>
           </div>
         </div>
       </div>
