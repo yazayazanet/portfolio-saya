@@ -14,7 +14,7 @@ interface Milestone {
 const milestones: Milestone[] = [
   {
     period: "Jul 2023 — Agu 2023",
-    title: "Logistics Staff — Proyek Smelter 150 kV Manyar",
+    title: "Logistik staff PT Persada Engineering & Contracting -Project Smelter 150 kV Manyar",
     description:
       "Mengelola alur logistik & ketersediaan material teknis untuk fase instalasi kabel bawah tanah tegangan tinggi 150 kV di Gresik.",
     icon: Package,

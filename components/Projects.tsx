@@ -12,12 +12,29 @@ interface Project {
   highlights: string[];
   tags: string[];
   image: string;
+  gallery?: string[];
   gridClass: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
+    title: "Logistik staff PT Persada Engineering & Contracting - Project Smelter 150 kV Manyar",
+    category: "Proyek Infrastruktur · Smelter 150 kV Manyar",
+    description:
+      "Mengelola alur logistik dan ketersediaan material teknis untuk mendukung pekerjaan instalasi kabel bawah tanah tegangan tinggi 150 kV di proyek Smelter Manyar, Gresik.",
+    highlights: [
+      "Koordinasi penerimaan, pencatatan, dan distribusi material proyek",
+      "Pemantauan ketersediaan material teknis untuk kebutuhan instalasi",
+      "Dukungan administrasi logistik dan dokumentasi pekerjaan lapangan",
+    ],
+    tags: ["Logistik Proyek", "Smelter Manyar", "150 kV", "Persada Engineering"],
+    image: "/project-manyar.jpg",
+    gallery: ["/project-manyar.jpg", "/project-manyar.jpg", "/project-manyar.jpg"],
+    gridClass: "md:col-span-12 lg:col-span-7 h-[460px]",
+  },
+  {
+    id: 2,
     title: "Produksi Biodiesel Jelantah & Analisis Emisi Mesin Diesel",
     category: "Tugas Akhir · Rekayasa Konversi Energi",
     description:
@@ -40,7 +57,7 @@ const projects: Project[] = [
     gridClass: "md:col-span-12 lg:col-span-7 h-[460px]",
   },
   {
-    id: 2,
+    id: 3,
     title: "Desain & Simulasi Jaringan Distribusi Air Bersih Multi-Lantai",
     category: "Pemodelan Sistem Perpipaan · EPANET",
     description:
@@ -63,7 +80,7 @@ const projects: Project[] = [
     gridClass: "md:col-span-12 lg:col-span-5 h-[460px]",
   },
   {
-    id: 3,
+    id: 4,
     title: "Pemeliharaan Gearbox Conveyor Tambang & Perancangan Alat Bantu",
     category: "Magang Industri · PT Bukit Asam Tbk",
     description:
@@ -185,12 +202,16 @@ export function Projects() {
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-6">
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full h-full object-cover"
-                />
+              <div className="grid grid-cols-3 gap-3 mb-6">
+                {(selectedProject.gallery ?? [selectedProject.image]).map((image, imageIdx) => (
+                  <div key={`${image}-${imageIdx}`} className="w-full h-28 sm:h-36 rounded-2xl overflow-hidden">
+                    <img
+                      src={image}
+                      alt={`${selectedProject.title} - foto ${imageIdx + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
               </div>
 
               <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-1">
